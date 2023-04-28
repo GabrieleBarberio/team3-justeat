@@ -1,0 +1,17 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@500&display=swap%22");
+
+@import url("https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap%22");
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap%22");
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300&display=swap%22");
+
+/* COLORI */
+
+:root{
+    --color-primary: #fb6100;
+    --color-title:#242e30;
+    --color-subtitle:#425457;
+    --color-border:#8a8786;
+}
