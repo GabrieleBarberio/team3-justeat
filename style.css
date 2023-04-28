@@ -1,0 +1,82 @@
+body {
+    background-color: black;
+}
+
+
+
+
+.button > button {
+    background-color: #fff;
+    border: none;
+    height: 45px;
+    width: 215px;
+    border-radius: 25px;
+
+}
+
+.button > button:hover {
+    background-color: rgb(161, 161, 161);
+
+}
+
+.button_access > button  {
+    background-color: #fff;
+    border: none;
+    height: 45px;
+    width: 75px;
+    border-radius: 30px;
+}
+
+
+.button_access >button:hover {
+    background-color: rgb(161, 161, 161);
+}
+
+.button_help > button {
+    background-color: #fff;
+    border: none;
+    height: 45px;
+    width: 100px;
+    border-radius: 30px;
+}
+
+.button_help > button:hover {
+    background-color: rgb(161, 161, 161);
+}
+
+#wrapper {
+    max-width: 520px;
+    width: 100%;  
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.card {
+    width: 200px ;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 14px;
+    background-color: white;
+    border-top-right-radius: 14%;
+    border-top-left-radius: 14%;
+
+}
+
+.card-pic > img {
+    border-top-right-radius: 14%;
+    border-top-left-radius: 14%;
+    height: 139px;
+    width: 200px;
+}
+
+.card-text > p {
+    padding: 8px;
+    display: flex;
+    margin-top: 8px;
+    justify-content: center;
+}
+
+.card-text > p:hover {
+    text-decoration: underline;
+}
