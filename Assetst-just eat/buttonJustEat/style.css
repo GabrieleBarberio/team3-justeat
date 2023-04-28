@@ -1,0 +1,17 @@
+#accettaCookie{
+    background-color: #fb6100;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    border: none;
+    font-size: 1.25rem;
+    height: 55px;
+    min-width: 55px;
+    padding: 14px 24px;
+    ;
+}
+
+#accettaCookie:hover{
+    background-color: #d75200;
+}
