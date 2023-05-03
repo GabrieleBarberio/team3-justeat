@@ -17,7 +17,8 @@ body {
 }
 
 .nation-menu {
-  width: 370px;
+  width: 100%;
+  max-width: 370px;
   height: auto;
   padding: 10px;
   display: flex;
