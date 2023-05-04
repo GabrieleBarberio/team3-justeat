@@ -36,12 +36,13 @@ body {
 }
 .nation-menu .nation-menu-options {
   display: flex;
-    height: auto;
+  height: auto;
   flex-wrap: wrap;
 }
 
 .nation-menu-options .nation-items .nation-button {
   width: 9rem;
+  max-width: 144px;
   height: 2rem;
   color: #242e30;
   white-space: nowrap;
@@ -53,6 +54,12 @@ body {
   align-items: center;
   gap: 0.9rem;
   padding: 0.2rem 1rem;
+}
+
+.nation-menu-options .nation-items .nation-button:focus{
+border-radius: none;
+outline: 2px solid #4996fd;
+transform: scale(1  );
 }
 
 .nation-menu-options .nation-items .nation-button:hover {
