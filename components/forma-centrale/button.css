@@ -7,7 +7,7 @@
   font-family: 'Konkhmer Sleokchher', cursive;
 } */
 
-main {
+.central-page {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -15,7 +15,7 @@ main {
   max-width: 100%;
 }
 
-main .sectionsearch {
+.central-page .sectionsearch {
   display: block;
   flex-direction: row;
   justify-content: center;
@@ -27,19 +27,19 @@ main .sectionsearch {
   width: 95%;
 }
 
-main .sectionsearch .sectiontext {
+.central-page .sectionsearch .sectiontext {
   justify-content: center;
   padding-bottom: 0px;
 }
 
-main .sectionsearch .sectiontext .sectiontitle {
+.central-page .sectionsearch .sectiontext .sectiontitle {
   color: #fb6100;
   font-size: 3rem;
   text-align: center;
   font-family: "Konkhmer Sleokchher";
 }
 
-main .sectionsearch .sectiontext .subtitlesection {
+.central-page .sectionsearch .sectiontext .subtitlesection {
   padding-top: 0px;
   text-align: center;
   padding-bottom: 15px;
@@ -48,13 +48,12 @@ main .sectionsearch .sectiontext .subtitlesection {
 }
 
 /* da aggiustare le misure */
-main .sectionsearch .searchbar {
+.central-page .sectionsearch .searchbar {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding-right: 0px;
-  /* position: relative; */
   border: 1px solid #8a8786;
   border-radius: 5rem;
   width: 85%;
@@ -62,18 +61,37 @@ main .sectionsearch .searchbar {
   position: relative;
 }
 
-main .sectionsearch .searchbar .search {
+.central-page .sectionsearch .searchbar .search {
   border: none;
   font-family: "IBM Plex Sans Arabic", sans-serif;
   border-bottom-left-radius: 5rem;
   border-top-left-radius: 5rem;
   height: 70px;
   width: 70%;
-  padding-left: 20px;
+  padding-left: 30px;
+  box-sizing: border-box;
+  padding-top: 30px;
+}
+
+.central-page .sectionsearch .searchbar label {
+  position: absolute;
+  pointer-events: none;
+  left: 25px;
+  padding: 0 5px;
+  color: #898786;
+  transition: all 0.3s ease;
 }
 
 .searchbar input:focus {
   outline: none;
+  font-size: 18px;
+}
+
+.searchbar input:focus ~ .label {
+  /* top: 140px; */
+  left: 19px;
+  /* font-size: 14px; */
+  transform: translateY(-80%) scale(0.9);
 }
 
 .adress {
@@ -89,26 +107,12 @@ main .sectionsearch .searchbar .search {
   right: 16px;
 }
 
-/* main .sectionsearch .searchbar .search::placeholder:: {
+/* .search  .sectionsearch .searchbar .search::placeholder:: {
   color: yellow;
 } */
 
-main .sectionsearch .searchbar label {
-  position: absolute;
-  pointer-events: none;
-  left: 15px;
-  padding: 0 5px;
-  color: #898786;
-  transition: transform 1s;
-}
-
-.searchbar label:focus {
-  transform: translateY(-5px);
-  color: red;
-}
-
 /* da aggiustare le misure */
-main .sectionsearch .searchbar .button-search {
+.central-page .sectionsearch .searchbar .button-search {
   font-family: "IBM Plex Sans Arabic", sans-serif;
   background-color: #fb6100;
   border-radius: 5rem;
@@ -124,7 +128,7 @@ main .sectionsearch .searchbar .button-search {
   margin-right: 5px;
 }
 
-main .sectionsearch .searchbar .button-search:hover {
+.central-page .sectionsearch .searchbar .button-search:hover {
   color: white;
   background-color: #be4a02;
   cursor: pointer;
