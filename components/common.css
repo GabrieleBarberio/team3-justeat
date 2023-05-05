@@ -15,3 +15,7 @@
     --color-subtitle:#425457;
     --color-border:#8a8786;
 }
+html,
+body{
+    font-family: "Konkhmer Sleokchher" , sans-serif;
+}
