@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -26,6 +31,10 @@ body .main-wrapper .side-wrapper {
 body .main-wrapper .side-wrapper .title-sb {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  height: 5%;
 }
 body .main-wrapper .side-wrapper .title-sb svg {
   max-width: 20px;
@@ -38,13 +47,19 @@ body .main-wrapper .side-wrapper .title-sb h3 {
 body .main-wrapper .side-wrapper .title-sb .reset {
   margin-left: auto;
   border-radius: 50rem;
-  max-height: 35px;
-  max-width: 80px;
+  height: 35px;
+  width: 70px;
   border: 1px solid rgba(0, 0, 0, 0);
   border-color: #efedea;
-  margin-top: 16px;
   font-weight: bold;
   background-color: white;
+}
+body .main-wrapper .side-wrapper .title-sb .reset:focus {
+  outline: 2px solid blue;
+}
+body .main-wrapper .side-wrapper .title-sb .reset:hover {
+  cursor: pointer;
+  background-color: #f4f3f1;
 }
 body .main-wrapper .side-wrapper .pop-up {
   height: 100%;
@@ -76,6 +91,23 @@ body .main-wrapper .side-wrapper .side-option div button {
   display: flex;
   align-items: center;
   padding-inline: 20px;
+  gap: 10px;
+}
+body .main-wrapper .side-wrapper .side-option div button svg {
+  display: none;
+  width: 7%;
+}
+body .main-wrapper .side-wrapper .side-option div button:hover {
+  cursor: pointer;
+}
+body .main-wrapper .side-wrapper .side-option div button:hover svg {
+  display: flex;
+}
+body .main-wrapper .side-wrapper .side-option div button:focus {
+  outline: 2px solid blue;
+}
+body .main-wrapper .side-wrapper .side-option div button:focus svg {
+  display: flex;
 }
 body .main-wrapper .side-wrapper .side-option div button .left {
   margin-left: auto;
@@ -97,6 +129,12 @@ body .main-wrapper .side-wrapper .more button {
   background-color: transparent;
   padding-top: 10px;
   font-size: 16px;
+}
+body .main-wrapper .side-wrapper .more button:hover {
+  text-decoration: underline;
+}
+body .main-wrapper .side-wrapper .more button:focus p {
+  display: flex;
 }
 body .main-wrapper .side-wrapper .more button svg {
   max-width: 15%;

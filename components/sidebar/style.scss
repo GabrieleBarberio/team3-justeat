@@ -1,7 +1,7 @@
-// * {
-//   margin: 0;
-//   padding: 0;
-// }
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   margin: 0;
   padding: 0;
@@ -28,6 +28,10 @@ body {
     .title-sb {
       display: flex;
       flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 3px;
+      height: 5%;
       svg {
         max-width: 20px;
       }
@@ -39,13 +43,20 @@ body {
       .reset {
         margin-left: auto;
         border-radius: 50rem;
-        max-height: 35px;
-        max-width: 80px;
+        height: 35px;
+        width: 70px;
         border: 1px solid rgba(0, 0, 0, 0);
         border-color: #efedea;
-        margin-top: 16px;
+        // margin-top: 16px;
         font-weight: bold;
         background-color: white;
+        &:focus {
+          outline: 2px solid blue;
+        }
+        &:hover {
+          cursor: pointer;
+          background-color: #f4f3f1;
+        }
       }
     }
     .pop-up {
@@ -69,6 +80,7 @@ body {
         font-weight: lighter;
         // padding-left: 15px;
         align-items: center;
+
         button {
           border: none;
           height: 40px;
@@ -78,6 +90,26 @@ body {
           display: flex;
           align-items: center;
           padding-inline: 20px;
+          gap: 10px;
+
+          svg {
+            display: none;
+            width: 7%;
+          }
+          &:hover {
+            cursor: pointer;
+            // background-color: #f4f3f1;
+
+            svg {
+              display: flex;
+            }
+          }
+          &:focus {
+            outline: 2px solid blue;
+            svg {
+              display: flex;
+            }
+          }
           .left {
             margin-left: auto;
           }
@@ -100,6 +132,14 @@ body {
         background-color: transparent;
         padding-top: 10px;
         font-size: 16px;
+        &:hover {
+          text-decoration: underline;
+        }
+        &:focus {
+          p {
+            display: flex;
+          }
+        }
         svg {
           max-width: 15%;
         }
