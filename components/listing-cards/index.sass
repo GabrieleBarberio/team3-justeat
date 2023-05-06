@@ -1,0 +1,174 @@
+*
+    margin: 0
+    padding: 0
+    
+body
+    width: 100%
+    height: 100%
+    margin: 0
+    padding: 0
+    display: flex
+    flex-direction: column
+
+input
+    color: black
+    
+.nav
+    height: 300px
+    width: 100%
+    background-color: #ffff
+
+.main-wrapper
+    width: 65%
+    height: 100%
+    margin: 0 auto
+    display: flex
+
+    gap: 2%
+    .side-wrapper
+        display: flex
+        flex-direction: column
+        width: 100%
+        height: 100%
+        max-width: 300px
+        .pop
+            position: relative
+            width: 100%
+            height: 100%
+            max-height: 150px
+            background-color:#f5f3f1
+            border-radius: 80px
+            display: flex
+            flex-direction: column
+            align-items: start
+            justify-content: center
+            .up
+                display: flex
+                flex-direction: column
+                justify-content: start 
+                align-items: start
+                flex-wrap: wrap
+                .address
+                    display: flex
+                    justify-content: center
+                    padding-left: 20px
+                    padding-top: 8px
+                    img
+                        height: 1.5rem
+                .city
+                    padding-left: 44px
+            .link
+                display: flex
+                justify-items: start
+                align-items: start   
+            .link>a
+                color: black
+                font-size: 0.8rem
+                padding-left: 44px
+        .sidebar
+            width: 100%
+            flex-grow: 1
+            background-color: red
+    .content-wrapper
+        display: flex
+        flex-direction: column
+        width: 100%
+        height: 100%
+        gap: 20px
+        .form
+            position: relative
+            display: flex
+            justify-content: start
+            align-items: center
+            width: 100%
+            height: 70px  
+            background-color: #ffff
+            margin: 1px
+            border: none
+            font-family: "IBM Plex Sans Arabic", sans-serif
+            border-radius: 80px
+            
+            gap: 8px
+            -webkit-box-shadow: 0px 0px 14px 2px rgba(151,151,151,0.37)
+            box-shadow: 0px 0px 14px 2px rgba(151,151,151,0.37)
+            img
+                height: 1.5rem
+                position: absolute
+                left: 20px
+                top: 22px
+            input
+                border: none
+                height: 100%
+                width: 100%
+                border-radius: 80px
+                font-size: 20px
+                padding-left: 50px
+                &:focus-visible 
+                    outline: 2px solid #4996fd
+                
+                    
+                    
+        .sub-form
+            height: 40px
+            width: 100%
+            display: flex
+            justify-content: space-between
+            .sub-form-item
+                padding-inline: 8px
+                display: flex
+                height: 1rem
+                gap: 1rem
+                align-items: center
+                svg
+                    height: 1rem
+                path 
+                    fill: #fb6100 !important
+        .card-wrapper
+            display: flex
+            flex-direction: column
+            margin-top: 2%
+            flex-grow: 1
+            width: 100%
+            height: 100%
+            gap: 20px
+            .card
+                display: flex
+                width: 100%
+                height: 100%
+                max-height: 150px
+                gap: 10px
+                padding: 8px
+                img
+                    display: block
+                    width: 33%
+                    height: auto
+                    border-radius: 20px
+                .card-right
+                    width: 100%
+                    display: flex
+                    flex-grow: 1
+                    flex-direction: column
+                    gap: 15px
+                    .card-title
+                        font-size: 25px
+                .card-info
+                    display: flex
+                    width:100%
+                    .info-content
+                        width: 40%
+                        display: flex
+                        flex-direction: column
+                        gap: 10px
+                        .info-item
+                            width: 100%
+                            display: flex
+                            align-items: center
+                            gap: 4px
+                            p
+                                white-space: nowrap
+                            img
+                                height: 1rem
+                                width: 15px
+                                
+ 
+
