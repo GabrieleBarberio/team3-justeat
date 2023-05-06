@@ -27,6 +27,7 @@ body
             flex-direction: column
             align-items: start
             justify-content: center
+            gap: 8px
             .up
                 display: flex
                 flex-direction: column
@@ -42,6 +43,7 @@ body
                         height: 1.5rem
                 .city
                     padding-left: 44px
+                    
             .link
                 display: flex
                 justify-items: start
@@ -50,6 +52,7 @@ body
                 color: black
                 font-size: 0.8rem
                 padding-left: 44px
+                font-weight: 700
     .content-wrapper
         display: flex
         flex-direction: column
@@ -70,8 +73,8 @@ body
             border-radius: 80px
             
             gap: 8px
-            -webkit-box-shadow: 0px 0px 14px 2px rgba(151,151,151,0.37)
-            box-shadow: 0px 0px 14px 2px rgba(151,151,151,0.37)
+            -webkit-box-shadow: 0px 0px 8px 1px rgba(151,151,151,0.37)
+            box-shadow: 0px 0px 8px 1px rgba(151,151,151,0.37)
             img
                 height: 1.5rem
                 position: absolute
@@ -90,10 +93,12 @@ body
                     
                     
         .sub-form
-            height: 40px
+            height: 100%
+            max-height: 40px
             width: 100%
             display: flex
             justify-content: space-between
+            font-size: 20px
             .sub-form-item
                 padding-inline: 8px
                 display: flex
@@ -101,7 +106,7 @@ body
                 gap: 1rem
                 align-items: center
                 svg
-                    height: 1rem
+                    height: 1.2rem
                 path 
                     fill: #fb6100 !important
         .card-wrapper
