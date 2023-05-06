@@ -16,26 +16,55 @@ input
 .nav
     height: 300px
     width: 100%
-    background-color: #fb6100
+    background-color: #ffff
 
 .main-wrapper
     width: 65%
     height: 100%
-    background-color: red
     margin: 0 auto
     display: flex
+
+    gap: 2%
     .side-wrapper
         display: flex
         flex-direction: column
         width: 100%
         height: 100%
         max-width: 300px
-        background-color: blue
-        .pop-up
+        .pop
+            position: relative
             width: 100%
             height: 100%
             max-height: 150px
-            background-color: blue
+            background-color:#f5f3f1
+            border-radius: 80px
+            display: flex
+            flex-direction: column
+            align-items: start
+            justify-content: center
+            .up
+                display: flex
+                flex-direction: column
+                justify-content: start 
+                align-items: start
+                flex-wrap: wrap
+                .address
+                    display: flex
+                    justify-content: center
+                    padding-left: 20px
+                    padding-top: 8px
+                    img
+                        height: 1.5rem
+                .city
+                    padding-left: 44px
+            .link
+                display: flex
+                justify-items: start
+                align-items: start   
+            .link>a
+                color: black
+                font-size: 0.8rem
+                padding-left: 44px
         .sidebar
             width: 100%
             flex-grow: 1
@@ -45,7 +74,6 @@ input
         flex-direction: column
         width: 100%
         height: 100%
-        background-color: #fff
         gap: 20px
         .form
             position: relative
@@ -77,6 +105,7 @@ input
                 padding-left: 50px
                 &:focus-visible 
                     outline: 2px solid #4996fd
+                
                     
                     
         .sub-form
