@@ -8,7 +8,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: rgb(250, 237, 221);
-  .navbar {
+  .upper-navbar {
     width: 65%;
     height: 100px;
     background-color: rgb(255, 255, 255);
@@ -42,6 +42,101 @@ body {
     svg {
       height: 20px;
       padding-right: 5px;
+    }
+  }
+  .bottom-navbar {
+    width: 65%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    display: flex;
+    padding-top: 0;
+    .food-card {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      //   gap: 20px;
+      button {
+        width: 11%;
+        height: 14%;
+        background-color: transparent;
+        display: flex;
+        flex-wrap: wrap;
+        border: none;
+        // margin-left: 30px;
+        padding: 10px;
+        img {
+          justify-content: center;
+          display: flex;
+          align-items: center;
+          width: 100%;
+          background-color: #ff8810;
+          border-radius: 10px;
+        }
+        .button-description {
+          display: flex;
+          padding-top: 15px;
+          //   width: 10%;
+          //   height: 12%;
+          //   align-items: end;
+          gap: 4px;
+          svg {
+            display: flex;
+            width: 10%;
+
+            // height: 50px;
+            display: none;
+          }
+        }
+        &:hover {
+          cursor: pointer;
+          svg {
+            display: flex;
+          }
+        }
+        &:focus {
+          outline: 2px solid blue;
+          svg {
+            display: flex;
+          }
+        }
+      }
+      .gustali-a-pranzo {
+        img {
+          background-color: #5b3d5b;
+        }
+      }
+      .fritti {
+        img {
+          background-color: #d6663a;
+        }
+      }
+      .hamburger {
+        img {
+          background-color: #eabd45;
+        }
+      }
+      .panini {
+        img {
+          background-color: #c9d9dd;
+        }
+      }
+      .sushi {
+        img {
+          background-color: #dea7b1;
+        }
+      }
+      .cinese {
+        img {
+          background-color: #e1872f;
+        }
+      }
+      .kebab {
+        img {
+          background-color: #5b3d5b;
+          height: 83%;
+        }
+      }
     }
   }
 }
