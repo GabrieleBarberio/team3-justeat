@@ -7,7 +7,6 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-color: rgb(250, 237, 221);
 }
 body .upper-navbar {
   width: 65%;
@@ -51,6 +50,7 @@ body .upper-right svg {
 }
 body .bottom-navbar {
   width: 65%;
+  height: -moz-fit-content;
   height: fit-content;
   background-color: rgb(255, 255, 255);
   margin: 0 auto;
@@ -61,6 +61,7 @@ body .bottom-navbar .food-card {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  height: -moz-fit-content;
   height: fit-content;
 }
 body .bottom-navbar .food-card button {
@@ -125,6 +126,4 @@ body .bottom-navbar .food-card .cinese img {
 }
 body .bottom-navbar .food-card .panini2 img {
   background-color: #a53f97;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
