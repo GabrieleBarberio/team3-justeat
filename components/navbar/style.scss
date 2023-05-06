@@ -21,6 +21,10 @@ body {
       height: 57%;
       padding-top: 15px;
       padding-left: 13px;
+      .justeat-logo {
+        background-color: transparent;
+        border: none;
+      }
       img {
         width: 100%;
       }
@@ -54,10 +58,10 @@ body {
     .food-card {
       width: 100%;
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
       //   gap: 20px;
       button {
-        width: 11%;
+        width: 12%;
         height: 14%;
         background-color: transparent;
         display: flex;
@@ -95,7 +99,9 @@ body {
           }
         }
         &:focus {
-          outline: 2px solid blue;
+          outline: 2px solid #4996fd;
+          border-radius: 10px;
+          color: #437c3e;
           svg {
             display: flex;
           }
@@ -131,10 +137,9 @@ body {
           background-color: #e1872f;
         }
       }
-      .kebab {
+      .panini2 {
         img {
-          background-color: #5b3d5b;
-          height: 83%;
+          background-color: #a53f97;
         }
       }
     }
