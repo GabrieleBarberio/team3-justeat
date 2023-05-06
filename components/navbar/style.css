@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(250, 237, 221);
+}
+body .upper-navbar {
+  width: 65%;
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  display: flex;
+  padding-top: 0;
+}
+body .upper-navbar .upper-logo {
+  display: flex;
+  width: 15%;
+  height: 57%;
+  padding-top: 15px;
+  padding-left: 13px;
+}
+body .upper-navbar .upper-logo .justeat-logo {
+  background-color: transparent;
+  border: none;
+}
+body .upper-navbar .upper-logo img {
+  width: 100%;
+}
+body .upper-right {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  gap: 25px;
+  padding-right: 10px;
+}
+body .upper-right a {
+  text-decoration: none;
+  color: #242e30;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  display: flex;
+}
+body .upper-right svg {
+  height: 20px;
+  padding-right: 5px;
+}
+body .bottom-navbar {
+  width: 65%;
+  height: fit-content;
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  display: flex;
+  padding-top: 0;
+}
+body .bottom-navbar .food-card {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: fit-content;
+}
+body .bottom-navbar .food-card button {
+  width: 12%;
+  height: 14%;
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  border: none;
+  padding: 10px;
+}
+body .bottom-navbar .food-card button img {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #ff8810;
+  border-radius: 10px;
+  position: relative;
+}
+body .bottom-navbar .food-card button .button-description {
+  display: flex;
+  padding-top: 15px;
+  gap: 4px;
+}
+body .bottom-navbar .food-card button .button-description svg {
+  display: flex;
+  width: 10%;
+  display: none;
+}
+body .bottom-navbar .food-card button:hover {
+  cursor: pointer;
+}
+body .bottom-navbar .food-card button:hover svg {
+  display: flex;
+}
+body .bottom-navbar .food-card button:focus {
+  outline: 2px solid #4996fd;
+  border-radius: 10px;
+  color: #437c3e;
+}
+body .bottom-navbar .food-card button:focus svg {
+  display: flex;
+}
+body .bottom-navbar .food-card .gustali-a-pranzo img {
+  background-color: #5b3d5b;
+}
+body .bottom-navbar .food-card .fritti img {
+  background-color: #d6663a;
+}
+body .bottom-navbar .food-card .hamburger img {
+  background-color: #eabd45;
+}
+body .bottom-navbar .food-card .panini img {
+  background-color: #c9d9dd;
+}
+body .bottom-navbar .food-card .sushi img {
+  background-color: #dea7b1;
+}
+body .bottom-navbar .food-card .cinese img {
+  background-color: #e1872f;
+}
+body .bottom-navbar .food-card .panini2 img {
+  background-color: #a53f97;
+}
+
+/*# sourceMappingURL=style.css.map */
