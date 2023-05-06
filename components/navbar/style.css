@@ -51,7 +51,7 @@ body .upper-right svg {
 }
 body .bottom-navbar {
   width: 65%;
-  height: 100%;
+  height: fit-content;
   background-color: rgb(255, 255, 255);
   margin: 0 auto;
   display: flex;
@@ -61,6 +61,7 @@ body .bottom-navbar .food-card {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  height: fit-content;
 }
 body .bottom-navbar .food-card button {
   width: 12%;
@@ -78,6 +79,7 @@ body .bottom-navbar .food-card button img {
   width: 100%;
   background-color: #ff8810;
   border-radius: 10px;
+  position: relative;
 }
 body .bottom-navbar .food-card button .button-description {
   display: flex;
