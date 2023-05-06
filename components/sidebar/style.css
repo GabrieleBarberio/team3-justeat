@@ -112,9 +112,6 @@ body .main-wrapper .side-wrapper .side-option div button:focus svg {
 body .main-wrapper .side-wrapper .side-option div button .left {
   margin-left: auto;
 }
-body .main-wrapper .side-wrapper .side-option div button .transparent {
-  color: #efedea;
-}
 body .main-wrapper .side-wrapper .more {
   display: flex;
   justify-content: center;
