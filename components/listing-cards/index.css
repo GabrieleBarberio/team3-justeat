@@ -175,4 +175,11 @@ body {
 .main-wrapper .content-wrapper .card-wrapper .card .card-info .info-content .info-item img {
   height: 1rem;
   width: 15px;
+}
+
+.main-wrapper .content-wrapper .card-wrapper .card:hover {
+  cursor: pointer;
+}
+.main-wrapper .content-wrapper .card-wrapper .card:hover h5 {
+  text-decoration: underline;
 }/*# sourceMappingURL=index.css.map */
