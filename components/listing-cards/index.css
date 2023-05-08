@@ -141,6 +141,8 @@ body {
   display: block;
   width: 33%;
   height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 20px;
 }
 .main-wrapper .content-wrapper .card-wrapper .card .card-right {
