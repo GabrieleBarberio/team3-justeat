@@ -9,7 +9,8 @@
     flex-direction: row;
     width: 80%;
     margin:0 auto;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 10px;
 }
 
 .anchor{
@@ -18,6 +19,10 @@
     text-decoration: none;
     color: #242e30;
     margin-bottom: 8px;
+}
+
+.anchor:hover{
+    text-decoration: underline;
 }
 
 .all-social-links{
@@ -102,13 +107,14 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 10px;
 }
 
 #part-cards{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 30%;
+    width: 20%;
 }
 
 .last-part img{

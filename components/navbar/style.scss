@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  .upper-navbar {
+    width: 65%;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    display: flex;
+    padding-top: 0;
+    .upper-logo {
+      display: flex;
+      width: 15%;
+      height: 57%;
+      padding-top: 15px;
+      padding-left: 13px;
+      .justeat-logo {
+        background-color: transparent;
+        border: none;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .upper-right {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    gap: 25px;
+    padding-right: 10px;
+    a {
+      text-decoration: none;
+      font-weight: 800;
+      color: #242e30;
+      font-size: 0.9rem;
+      line-height: 1.5;
+      display: flex;
+    }
+    svg {
+      height: 20px;
+      padding-right: 5px;
+    }
+  }
+  .bottom-navbar {
+    width: 65%;
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    display: flex;
+    padding-top: 0;
+    .food-card {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      height: fit-content;
+      //   gap: 20px;
+      button {
+        width: 12%;
+        height: 14%;
+        background-color: transparent;
+        display: flex;
+        flex-wrap: wrap;
+        border: none;
+        // margin-left: 30px;
+        padding: 10px;
+        img {
+          justify-content: center;
+          display: flex;
+          align-items: center;
+          width: 100%;
+          background-color: #ff8810;
+          border-radius: 10px;
+          position: relative;
+        }
+        .button-description {
+          display: flex;
+          padding-top: 15px;
+          //   width: 10%;
+          //   height: 12%;
+          //   align-items: end;
+          gap: 4px;
+          svg {
+            display: flex;
+            width: 10%;
+
+            // height: 50px;
+            display: none;
+          }
+        }
+        &:hover {
+          cursor: pointer;
+          svg {
+            display: flex;
+          }
+        }
+        &:focus {
+          outline: 2px solid #4996fd;
+          border-radius: 10px;
+          color: #437c3e;
+          svg {
+            display: flex;
+          }
+        }
+      }
+      .gustali-a-pranzo {
+        img {
+          background-color: #5b3d5b;
+        }
+      }
+      .fritti {
+        img {
+          background-color: #d6663a;
+        }
+      }
+      .hamburger {
+        img {
+          background-color: #eabd45;
+        }
+      }
+      .panini {
+        img {
+          background-color: #c9d9dd;
+        }
+      }
+      .sushi {
+        img {
+          background-color: #dea7b1;
+        }
+      }
+      .cinese {
+        img {
+          background-color: #e1872f;
+        }
+      }
+      .panini2 {
+        img {
+          background-color: #a53f97;
+        }
+      }
+    }
+  }
+}
