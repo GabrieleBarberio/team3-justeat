@@ -1,11 +1,14 @@
 body{
-    padding: 35px;
+    padding: 0px;
     margin: 0px;
 }
 
 .container{
 display: flex;
 justify-content:space-around ;
+width: 65%;
+max-width: 1500px;
+margin: 0 auto;
 }
 
 h1{
@@ -19,7 +22,6 @@ img{
 
 .ios{
     height: 130px;
-    padding-left: 76px;
     cursor: pointer;
 }
 
