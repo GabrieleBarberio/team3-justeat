@@ -62,6 +62,7 @@
     
     .nav-button-items > button:hover {
         background-color: #f5f3f1;
+        cursor: pointer;
     }
     
   
