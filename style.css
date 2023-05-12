@@ -64,28 +64,4 @@
         background-color: #f5f3f1;
     }
     
-    #card-wrapper{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-    }
-    
-    .card {
-        border-radius: 14px;
-        background-color: white;
-        border-top-right-radius: 14px;
-        border-top-left-radius: 14px;
-    }
-    
-    .card > img {
-        border-top-left-radius: 14px;
-        border-top-right-radius: 14px;
-        
-    }
-    
-    .card-text > p{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  
