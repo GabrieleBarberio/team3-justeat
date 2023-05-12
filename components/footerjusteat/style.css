@@ -1,4 +1,8 @@
-
+*{ 
+    margin: 0; 
+    padding:0;
+    box-sizing: border-box;
+}
 
 #footerJusteat{
     display:flex;
@@ -18,6 +22,7 @@
     flex-direction: row;
     width: 60%;
     margin:20px auto;
+    gap: 5px;
 }
 
 .all-links a:hover{
@@ -133,5 +138,6 @@
 #citta,
 #catene,
 #chi-siamo{
-    width: 18%;
+    width: 20%;
+    
 }
