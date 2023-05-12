@@ -1,0 +1,143 @@
+*{ 
+    margin: 0; 
+    padding:0;
+    box-sizing: border-box;
+}
+
+#footerJusteat{
+    display:flex;
+    background-color: #efedea;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.all-links{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin:20px auto;
+    gap: 5px;
+}
+
+.all-links a:hover{
+    text-decoration: underline;
+}
+
+.anchor{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: #242e30;
+    margin-bottom: 8px;
+}
+
+.all-social-links{
+    width: 100%;
+    background-color: white;
+    display: flex;
+}
+
+
+.social-links{
+    width: 60%;
+    display: flex;
+    margin:35px auto;
+    justify-content: space-between;    
+}
+
+.scarica-app,
+.seguici-su{
+    width: 28%;
+}
+
+.image-social{
+    display: grid;
+    flex-wrap: nowrap;
+    grid-template-columns: repeat(2,1fr);
+    width: 90%;
+    gap: 10px;
+}
+
+#appstoreImg img{
+    width: 100%;
+    height: 80%;
+}
+
+.scarica-app > .image-social img{
+    width:100%;
+}
+
+.image-seguici a svg{
+    width: 50%;
+}
+
+.image-seguici{
+    display: flex;
+}
+
+.image-seguici-a{
+    width: 20%;
+}
+
+.feedback p{
+    margin: 10% 0;
+    margin-bottom: 10px;
+}
+
+.feedback a{
+    color:black
+}
+
+.card-cookie{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.last-part{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin:10px auto;
+}
+
+#part-cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+}
+
+.last-part img{
+    height: 100%;
+    width: 20%;
+    object-fit: contain;
+    mix-blend-mode: darken;
+}
+
+.last-part-cookie{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 10px;
+}
+
+.last-part-cookie a{
+    color: black;
+}
+
+#servizio-clienti,
+#cucine,
+#citta,
+#catene,
+#chi-siamo{
+    width: 20%;
+    
+}

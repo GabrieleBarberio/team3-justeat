@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+body .nav {
+  height: 300px;
+  width: 100%;
+  background-color: #fb6100;
+}
+body .main-wrapper {
+  width: 65%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+body .main-wrapper .side-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  background-color: rgb(255, 255, 255);
+}
+body .main-wrapper .side-wrapper .title-sb {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  height: 5%;
+}
+body .main-wrapper .side-wrapper .title-sb svg {
+  max-width: 20px;
+}
+body .main-wrapper .side-wrapper .title-sb h3 {
+  font-size: 1rem;
+  padding: 3px 7px 0 7px;
+  font-weight: normal;
+}
+body .main-wrapper .side-wrapper .title-sb .reset {
+  margin-left: auto;
+  border-radius: 50rem;
+  height: 35px;
+  width: 70px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-color: #efedea;
+  font-weight: bold;
+  background-color: white;
+}
+body .main-wrapper .side-wrapper .title-sb .reset:focus {
+  outline: 2px solid blue;
+}
+body .main-wrapper .side-wrapper .title-sb .reset:hover {
+  cursor: pointer;
+  background-color: #f4f3f1;
+}
+body .main-wrapper .side-wrapper .side-option {
+  display: flex;
+  flex-direction: column;
+}
+body .main-wrapper .side-wrapper .side-option > div {
+  display: flex;
+  border-radius: 50rem;
+  max-width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-color: #efedea;
+  margin-top: 16px;
+  background-color: white;
+  color: #242e30;
+  font-weight: lighter;
+  align-items: center;
+}
+body .main-wrapper .side-wrapper .side-option > div button {
+  border: none;
+  height: 40px;
+  width: 100%;
+  border-radius: 50rem;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  padding-inline: 20px;
+  gap: 10px;
+}
+body .main-wrapper .side-wrapper .side-option > div button svg {
+  display: none;
+  width: 7%;
+}
+body .main-wrapper .side-wrapper .side-option > div button:hover {
+  cursor: pointer;
+}
+body .main-wrapper .side-wrapper .side-option > div button:hover svg {
+  display: flex;
+}
+body .main-wrapper .side-wrapper .side-option > div button:focus {
+  outline: 2px solid blue;
+}
+body .main-wrapper .side-wrapper .side-option > div button:focus svg {
+  display: flex;
+}
+body .main-wrapper .side-wrapper .side-option > div button .left {
+  margin-left: auto;
+}
+body .main-wrapper .side-wrapper .more {
+  display: flex;
+  justify-content: center;
+}
+body .main-wrapper .side-wrapper .more button {
+  display: flex;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  border: none;
+  background-color: transparent;
+  padding-top: 10px;
+  font-size: 16px;
+}
+body .main-wrapper .side-wrapper .more button:hover {
+  text-decoration: underline;
+}
+body .main-wrapper .side-wrapper .more button:focus p {
+  display: flex;
+}
+body .main-wrapper .side-wrapper .more button svg {
+  max-width: 15%;
+}/*# sourceMappingURL=style.css.map */

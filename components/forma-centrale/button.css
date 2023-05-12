@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300&display=swap");
+/* * {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-family: 'Konkhmer Sleokchher', cursive;
+} */
+
+.central-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.central-page .sectionsearch {
+  display: block;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  padding: 20px 36px 46px 36px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
+  width: 95%;
+}
+
+.central-page .sectionsearch .sectiontext {
+  justify-content: center;
+  padding-bottom: 0px;
+}
+
+.central-page .sectionsearch .sectiontext .sectiontitle {
+  color: #fb6100;
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Konkhmer Sleokchher";
+}
+
+.central-page .sectionsearch .sectiontext .subtitlesection {
+  padding-top: 0px;
+  text-align: center;
+  padding-bottom: 15px;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.3rem;
+}
+
+/* da aggiustare le misure */
+.central-page .sectionsearch .searchbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-right: 0px;
+  border: 1px solid #8a8786;
+  border-radius: 5rem;
+  width: 85%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.central-page .sectionsearch .searchbar .search {
+  border: none;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  border-bottom-left-radius: 5rem;
+  border-top-left-radius: 5rem;
+  height: 70px;
+  width: 70%;
+  padding-left: 30px;
+  box-sizing: border-box;
+  padding-top: 30px;
+}
+
+.central-page .sectionsearch .searchbar label {
+  position: absolute;
+  pointer-events: none;
+  left: 25px;
+  padding: 0 5px;
+  color: #898786;
+  transition: all 0.3s ease;
+}
+
+.searchbar input:focus {
+  outline: none;
+  font-size: 18px;
+}
+
+.searchbar input:focus ~ .label {
+  /* top: 140px; */
+  left: 19px;
+  /* font-size: 14px; */
+  transform: translateY(-80%) scale(0.9);
+}
+
+.adress {
+  position: absolute;
+  top: 8px;
+  left: 24px;
+  text-align: left;
+  transition: all 0.3s;
+  cursor: text;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  right: 16px;
+}
+
+/* .search  .sectionsearch .searchbar .search::placeholder:: {
+  color: yellow;
+} */
+
+/* da aggiustare le misure */
+.central-page .sectionsearch .searchbar .button-search {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  background-color: #fb6100;
+  border-radius: 5rem;
+  height: 65px;
+  width: 260px;
+  border: none;
+  /* position: relative; */
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-left: auto;
+  margin-block: 5px;
+  margin-right: 5px;
+}
+
+.central-page .sectionsearch .searchbar .button-search:hover {
+  color: white;
+  background-color: #be4a02;
+  cursor: pointer;
+}

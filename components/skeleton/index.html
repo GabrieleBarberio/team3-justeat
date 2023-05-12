@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Just Eat!</title>
+    <link rel="stylesheet" href="../common.css" />
+    <link rel="stylesheet" href="../navbar/style.css" />
+    <link rel="stylesheet" href="../listing-cards/index.css">
+    <link rel="stylesheet" href="../sidebar/style.css">
+    <title>Just Eat!</title>
+  </head>
+  <body>
+    <div class="upper-navbar">
+      <div class="upper-logo">
+        <!-- <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 98 24"
+          data-theme-logo="je-logo"
+          data-test-id="header-logo"
+          class="c-ficon c-ficon--logo-justeat Logo_c-logo-img_3AhXf"
+        >
+          <path
+            d="M10.97.5c.45-.3 1.04-.3 1.5 0 1.15.72 2.26 1.52 3.31 2.38 0 0 .29.2.3-.14-.03-.43 0-.87.07-1.3a.6.6 0 01.55-.37s1.3.06 2.13.17a.8.8 0 01.7.71s.53 3.53.65 4.8c0 0 .1.65 1.04 1.75 0 0 1.92 2.67 2.14 3.18 0 0 .44.92-.51 1.04 0 0-1.75.18-1.92.22a.43.43 0 00-.38.47s-.1 6.14-.54 9.08c0 0-.12 1.17-.77 1.15 0 0-1.8-.06-2.21-.05 0 0-.18 0-.16-.24 0 0 .92-9.57.3-14.4 0 0-.03-.63-.5-.77 0 0-.44-.17-.86.38a15.14 15.14 0 00-2.84 8.64s-.05 1.52.18 1.9c0 0 .15.27.9.33l.93.13s.18 0 .16.23c0 0-.21 2.8-.28 3.3 0 .12-.02.23-.06.34 0 0-.04.09-.33.08 0 0-4.15-.03-4.62 0 0 0-.2 0-.24-.1-.04-.1-.29-3.63-.28-4.13 0-.1.05-.2.15-.24a2.48 2.48 0 001.15-1.82c.05-.54.05-1.07.02-1.6 0 0 .15-5.4.2-6.26 0 0 .02-.29-.36-.34a.36.36 0 00-.27.04.36.36 0 00-.16.22v.03c0 .03-.27 3.55-.22 4.95 0 0 .1.92-.55.94 0 0-.62.1-.65-.67 0 0 .05-3.46.2-5.16 0-.2-.14-.36-.34-.38a.38.38 0 00-.43.3v.04s-.27 3.3-.22 5.04c0 0 .08.85-.6.82 0 0-.56.06-.6-.69 0 0 .16-4.72.2-5.09a.38.38 0 00-.34-.36h-.04a.38.38 0 00-.41.32v.03s-.25 5.66-.22 7.32c0 0-.02 1.7 1.25 2.4 0 0 .18.1.19.27 0 0 .14 3 .27 3.96 0 0 .05.24-.16.24l-3.19.08a.65.65 0 01-.65-.61 70.71 70.71 0 01-.6-9.58.49.49 0 00-.37-.53S.94 12.8.55 12.71a.68.68 0 01-.41-1A32.72 32.72 0 0110.97.51zm22.46 8.88h-3.15c-1.02 0-1.02 0-1.23 1.19-.22 1.18-.21 1.22.72 1.22h1.87l-1.06 6.06c-.26 1.35-.85 2.28-2.68 2.83-.47.13-.6.3-.6.5.04.35.14.68.3.98.3.72.47.85.72.85.3-.03.6-.09.9-.17 2.6-.85 3.66-2.84 4.08-5.2l1.2-6.82c.2-1.44.2-1.44-1.07-1.44m10.67 0c-1.27 0-1.27 0-1.44 1.06l-.92 5.5c-.26 1.61-.68 2.54-2.26 2.54-1.57 0-2.08-.93-1.83-2.37l.9-5.25c.25-1.48.2-1.48-1.1-1.48-1.33 0-1.33 0-1.5 1.02l-.93 5.5c-.56 3.13 1.4 5.07 4.17 5.07 3.1 0 4.67-1.39 5.18-4.69l.94-5.46c.2-1.44.13-1.44-1.2-1.44m5.82 9.02c1.02-.05 1.57-.51 1.57-.97 0-.6-.72-.8-1.7-1.1-1.91-.6-3.66-1.27-3.66-3.3 0-2.42 2-3.73 4.51-3.73 1 0 2.02.04 3.02.13.68.08.85.3.64 1.35-.22 1.06-.47 1.14-1.06 1.1-.73-.04-1.67-.13-2.77-.13-1.27 0-1.66.47-1.66.9 0 .54.51.84 1.7 1.18 2.21.63 3.66 1.52 3.66 3.43 0 2.24-1.66 3.55-4.34 3.63-1.28.05-2.56-.02-3.83-.2-.85-.13-.9-.13-.68-1.36.21-1.1.21-1.18 1.02-1.1 1.18.15 2.38.2 3.57.17m13.91-9.02h-7.18c-1.02 0-1.02 0-1.24 1.23-.21 1.23-.16 1.23.73 1.23h2.34l-1.32 7.59c-.26 1.48-.21 1.48 1.1 1.48 1.24 0 1.28 0 1.45-1.06l1.36-8h2.26c1.01 0 1.01 0 1.23-1.22.21-1.23.2-1.23-.73-1.23m12.68 2.41c1.02 0 1.02 0 1.23-1.23.22-1.22.21-1.22-.72-1.22h-5.15c-1.83 0-1.78 0-2.08 1.82l-1.32 7.65c-.34 2-.3 2 1.53 2h5.02c1.07 0 1.02 0 1.24-1.2.2-1.18.2-1.22-.73-1.22H71.2l.34-2.2h3.62c.97 0 .97 0 1.14-1.14.17-1.15.17-1.19-1.15-1.19h-3.19l.35-2.07h4.2zm5.43 4.05l1.66-3.64c.13-.3.13-.3.34-.3.21 0 .21 0 .26.34l.5 3.6h-2.76zm4.5-5.08c-.24-1.44-.24-1.44-2.29-1.44-1.91 0-1.87 0-2.47 1.19l-4.3 8.93c-.63 1.26-.5 1.39 1.07 1.39 1.24 0 1.24 0 1.75-1.14l.67-1.53h4.17l.21 1.53c.18 1.14.22 1.14 1.45 1.14 1.4 0 1.53-.08 1.28-1.48l-1.53-8.59zm10.18-1.4H89.4c-1.02 0-1.02 0-1.23 1.23-.21 1.23-.17 1.23.72 1.23h2.34l-1.32 7.59c-.25 1.48-.21 1.48 1.1 1.48 1.24 0 1.28 0 1.45-1.06l1.37-8h2.25c1.02 0 1.02 0 1.23-1.22.21-1.23.26-1.23-.68-1.23"
+          ></path>
+        </svg> -->
+        <a href="#" class="justeat-logo">
+            <img
+              src="../../Assets-just eat/Home/Just-Eat-Logo-navbar.png"
+              alt="Just Eat Logo"
+            />
+        </a>
+      </div>
+      <div class="upper-right">
+        <a href="#">Accedi</a>
+        <a href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 14 14"
+            class="c-pieIcon c-pieIcon--HelpCircleOutlineSmall Navigation_c-nav-icon_1yeZp Navigation_c-nav-icon--help_1SX3t"
+          >
+            <path
+              d="M7 0.21875C5.6588 0.21875 4.34771 0.616463 3.23254 1.3616C2.11737 2.10673 1.2482 3.16582 0.734945 4.40493C0.221688 5.64404 0.0873968 7.00752 0.349053 8.32296C0.610709 9.63839 1.25656 10.8467 2.20494 11.7951C3.15331 12.7434 4.36161 13.3893 5.67705 13.651C6.99248 13.9126 8.35596 13.7783 9.59508 13.2651C10.8342 12.7518 11.8933 11.8826 12.6384 10.7675C13.3835 9.65229 13.7813 8.3412 13.7813 7C13.7789 5.20221 13.0637 3.47872 11.7925 2.20749C10.5213 0.93626 8.79779 0.221065 7 0.21875ZM7 12.4688C5.91839 12.4688 4.86106 12.148 3.96173 11.5471C3.0624 10.9462 2.36145 10.0921 1.94754 9.0928C1.53362 8.09352 1.42532 6.99393 1.63633 5.9331C1.84735 4.87227 2.36819 3.89783 3.13301 3.13301C3.89783 2.36819 4.87227 1.84734 5.9331 1.63633C6.99394 1.42532 8.09352 1.53362 9.0928 1.94753C10.0921 2.36145 10.9462 3.06239 11.5471 3.96173C12.148 4.86106 12.4688 5.91838 12.4688 7C12.4688 7.71817 12.3273 8.4293 12.0525 9.0928C11.7776 9.7563 11.3748 10.3592 10.867 10.867C10.3592 11.3748 9.7563 11.7776 9.0928 12.0525C8.4293 12.3273 7.71817 12.4688 7 12.4688ZM9.0475 5.25C9.02744 5.69976 8.8597 6.13038 8.57024 6.4752C8.28078 6.82002 7.88574 7.05982 7.44625 7.1575L7.35875 7.875H6.48375L6.3875 6.44875C7.21 6.3525 7.8225 5.95875 7.8225 5.31125C7.82122 5.20242 7.79663 5.09513 7.75036 4.99662C7.7041 4.89811 7.63725 4.81066 7.55433 4.74017C7.4714 4.66968 7.37433 4.6178 7.26965 4.58801C7.16497 4.55822 7.05512 4.55123 6.9475 4.5675C6.62634 4.55709 6.31333 4.66977 6.0725 4.8825L5.32 4.12125C5.54223 3.90769 5.80613 3.74229 6.0952 3.63539C6.38428 3.5285 6.6923 3.4824 7 3.5C7.25183 3.46679 7.50782 3.48691 7.75137 3.55907C7.99491 3.63123 8.22055 3.7538 8.41364 3.91884C8.60673 4.08387 8.76294 4.28767 8.87215 4.517C8.98135 4.74634 9.04109 4.99608 9.0475 5.25ZM7.77 9.625C7.77 9.77729 7.72484 9.92616 7.64024 10.0528C7.55563 10.1794 7.43537 10.2781 7.29467 10.3364C7.15397 10.3947 6.99915 10.4099 6.84978 10.3802C6.70042 10.3505 6.56322 10.2772 6.45553 10.1695C6.34784 10.0618 6.27451 9.92459 6.2448 9.77522C6.21509 9.62585 6.23034 9.47103 6.28862 9.33033C6.3469 9.18964 6.44559 9.06938 6.57221 8.98477C6.69884 8.90016 6.84771 8.855 7 8.855C7.20351 8.85728 7.39805 8.93913 7.54196 9.08304C7.68588 9.22696 7.76773 9.42149 7.77 9.625Z"
+            ></path>
+          </svg>
+          Aiuto?
+        </a>
+      </div>
+    </div>
+    <div class="bottom-navbar">
+      <div class="food-card">
+        <button class="pizza">
+            <img
+            src="https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_fill,f_auto,h_480,q_auto,w_640/v1/experiments/projecticing/it/cuisine-icons/pizza"
+            data-test-id="image-tile-image"
+            alt=""
+            role="presentation"
+            class="ImageTile_c-imageTile-image_25Xbt"
+            />
+          <div class="button-description">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 17 12"
+              class="c-ficon c-ficon--tick FilterPill_c-filterPill-icon_2Vk2V"
+            >
+              <path
+                d="M5.53 10.57L15.65.45a.4.4 0 1 1 .57.57l-10.4 10.4a.4.4 0 0 1-.57 0l-4.8-4.8a.4.4 0 1 1 .57-.57l4.51 4.52z"
+              ></path>
+            </svg>
+            <span>Pizza</span>
+          </div>
+        </button>
+        <button class="gustali-a-pranzo">
+          <img
+            src="https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_fill,f_auto,h_480,q_auto,w_640/v1/experiments/projecticing/it/cuisine-icons/gustali-a-pranzo"
+            data-test-id="image-tile-image"
+            alt=""
+            role="presentation"
+            class="ImageTile_c-imageTile-image_25Xbt"
+          />
+          <div class="button-description">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 17 12"
+              class="c-ficon c-ficon--tick FilterPill_c-filterPill-icon_2Vk2V"
+            >
+              <path
+                d="M5.53 10.57L15.65.45a.4.4 0 1 1 .57.57l-10.4 10.4a.4.4 0 0 1-.57 0l-4.8-4.8a.4.4 0 1 1 .57-.57l4.51 4.52z"
+              ></path>
+            </svg>
+            <span>Gustali a pranzo</span>
+          </div>
+        </button>
+        <button class="fritti">
+          <img
+            src="https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_fill,f_auto,h_480,q_auto,w_640/v1/experiments/projecticing/it/cuisine-icons/fritti"
+            data-test-id="image-tile-image"
+            alt=""
+            role="presentation"
+            class="ImageTile_c-imageTile-image_25Xbt"
+          />
+          <div class="button-description">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 17 12"
+              class="c-ficon c-ficon--tick FilterPill_c-filterPill-icon_2Vk2V"
+            >
+              <path
+                d="M5.53 10.57L15.65.45a.4.4 0 1 1 .57.57l-10.4 10.4a.4.4 0 0 1-.57 0l-4.8-4.8a.4.4 0 1 1 .57-.57l4.51 4.52z"
+              ></path>
+            </svg>
+            <span>Fritti</span>
+          </div>
+        </button>
+        <button class="hamburger">
+          <img
+            src="https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_fill,f_auto,h_480,q_auto,w_640/v1/experiments/projecticing/it/cuisine-icons/hamburger"
+            data-test-id="image-tile-image"
+            alt=""
+            role="presentation"
+            class="ImageTile_c-imageTile-image_25Xbt"
+          />
+          <div class="button-description">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 17 12"
+              class="c-ficon c-ficon--tick FilterPill_c-filterPill-icon_2Vk2V"
+            >
+              <path
+                d="M5.53 10.57L15.65.45a.4.4 0 1 1 .57.57l-10.4 10.4a.4.4 0 0 1-.57 0l-4.8-4.8a.4.4 0 1 1 .57-.57l4.51 4.52z"
+              ></path>
+            </svg>
+            <span>Hamburger</span>
+          </div>
+        </button>
+        <button class="panini">
+          <img
+            src="https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_fill,f_auto,h_480,q_auto,w_640/v1/experiments/projecticing/it/cuisine-icons/panini"
+            data-test-id="image-tile-image"
+            alt=""
+            role="presentation"
+            class="ImageTile_c-imageTile-image_25Xbt"
+          />
+          <div class="button-description">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 17 12"
+              class="c-ficon c-ficon--tick FilterPill_c-filterPill-icon_2Vk2V"
+            >
+              <path
+                d="M5.53 10.57L15.65.45a.4.4 0 1 1 .57.57l-10.4 10.4a.4.4 0 0 1-.57 0l-4.8-4.8a.4.4 0 1 1 .57-.57l4.51 4.52z"
+              ></path>
+            </svg>
+            <span>Panini</span>
+          </div>
+        </button>
+        <button class="sushi">
+          <img
+            src="https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_fill,f_auto,h_480,q_auto,w_640/v1/experiments/projecticing/it/cuisine-icons/sushi"
+            data-test-id="image-tile-image"
+            alt=""
+            role="presentation"
+            class="ImageTile_c-imageTile-image_25Xbt"
+          />
+          <div class="button-description">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 17 12"
+              class="c-ficon c-ficon--tick FilterPill_c-filterPill-icon_2Vk2V"
+            >
+              <path
+                d="M5.53 10.57L15.65.45a.4.4 0 1 1 .57.57l-10.4 10.4a.4.4 0 0 1-.57 0l-4.8-4.8a.4.4 0 1 1 .57-.57l4.51 4.52z"
+              ></path>
+            </svg>
+            <span>Sushi</span>
+          </div>
+        </button>
+        <button class="cinese">
+          <img
+            src="https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_fill,f_auto,h_480,q_auto,w_640/v1/experiments/projecticing/it/cuisine-icons/cinese"
+            data-test-id="image-tile-image"
+            alt=""
+            role="presentation"
+            class="ImageTile_c-imageTile-image_25Xbt"
+          />
+          <div class="button-description">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 17 12"
+              class="c-ficon c-ficon--tick FilterPill_c-filterPill-icon_2Vk2V"
+            >
+              <path
+                d="M5.53 10.57L15.65.45a.4.4 0 1 1 .57.57l-10.4 10.4a.4.4 0 0 1-.57 0l-4.8-4.8a.4.4 0 1 1 .57-.57l4.51 4.52z"
+              ></path>
+            </svg>
+            <span>Cinese</span>
+          </div>
+        </button>
+        <button class="panini2">
+            <img
+              src="https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_fill,f_auto,h_480,q_auto,w_640/v1/experiments/projecticing/it/cuisine-icons/panini"
+              data-test-id="image-tile-image"
+              alt=""
+              role="presentation"
+              class="ImageTile_c-imageTile-image_25Xbt"
+            />
+            <div class="button-description">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 17 12"
+                class="c-ficon c-ficon--tick FilterPill_c-filterPill-icon_2Vk2V"
+              >
+                <path
+                  d="M5.53 10.57L15.65.45a.4.4 0 1 1 .57.57l-10.4 10.4a.4.4 0 0 1-.57 0l-4.8-4.8a.4.4 0 1 1 .57-.57l4.51 4.52z"
+                ></path>
+              </svg>
+              <span>Toast</span>
+            </div>
+          </button>
+        </button>
+      </div>
+    </div>
+
+    <div class="main-wrapper">
+        <div class="side-wrapper">
+          <div class="pop">          <div class="up">
+            <div class="address">
+            <img
+              src="../../Assets-just eat/Cards/icons8-region-50.png"
+              alt=""
+            /><span>Via del Corso, 26845</span></div><span class="city">Codogno</span>
+          </div>
+          <div class="link"><a href="#">Cambia Zona</a></div></div>
+          <div class="sidebar">
+            <div class="title-sb">
+              <svg
+                data-v-67ec89c6=""
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 17 15"
+                class="c-ficon c-ficon--cuisine"
+              >
+                <path
+                  data-v-67ec89c6=""
+                  d="M5.1 4h3.6a.4.4 0 0 1 0 .8h-.4l-1.2 9.3a.4.4 0 0 1-.4.3h-4a.4.4 0 0 1-.4-.3l-1-9.3H.7a.4.4 0 1 1 0-.8h3.6V2.2L2.8.7a.4.4 0 1 1 .6-.6L5 1.7a.4.4 0 0 1 .1.3v2zm2.4.8H2l1 8.8h3.3l1-8.8zm7.2 4v-.4c0-.7-.5-1.2-1.2-1.2h-2.4c-.6 0-1.2.5-1.2 1.2v.4h4.8zm.8 3.2v.4a2 2 0 0 1-2 2h-2.4a2 2 0 0 1-2-2V12a1.7 1.7 0 0 1-.4 0 .4.4 0 1 1 0-.8c.3 0 .4 0 .7-.3.4-.4.6-.5 1.1-.5.5 0 .8.1 1.2.5l.6.3c.3 0 .4 0 .7-.3.4-.4.6-.5 1.1-.5.5 0 .8.1 1.2.5l.6.3a.4.4 0 1 1 0 .8 1.7 1.7 0 0 1-.4 0zm-5.6-.5v.9c0 .7.6 1.2 1.2 1.2h2.4c.7 0 1.2-.5 1.2-1.2v-1l-.6-.2c-.3 0-.3 0-.6.3-.4.4-.7.5-1.2.5s-.7-.1-1.1-.5c-.3-.2-.4-.3-.7-.3-.2 0-.3 0-.6.3zm-.8-3.1c0-1.1 1-2 2-2h2.4a2 2 0 0 1 2 2v.8a.4.4 0 0 1-.4.4H9.5a.4.4 0 0 1-.4-.4v-.8z"
+                ></path>
+              </svg>
+              <h3>Tutte le altre (A-Z)</h3>
+              <button class="reset">Resetta</button>
+            </div>
+            <div class="side-option">
+              <div>
+                <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 12" class="c-ficon c-ficon--tick FilterPill_c-filterPill-icon_2Vk2V"><path d="M5.53 10.57L15.65.45a.4.4 0 1 1 .57.57l-10.4 10.4a.4.4 0 0 1-.57 0l-4.8-4.8a.4.4 0 1 1 .57-.57l4.51 4.52z"></path></svg><span>AsianFood</span><span class="left">6</span></button>
+              </div>
+              <div>
+                <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 12" class="c-ficon c-ficon--tick FilterPill_c-filterPill-icon_2Vk2V"><path d="M5.53 10.57L15.65.45a.4.4 0 1 1 .57.57l-10.4 10.4a.4.4 0 0 1-.57 0l-4.8-4.8a.4.4 0 1 1 .57-.57l4.51 4.52z"></path></svg><span>Bevande</span><span class="left">12</span></button>
+              </div>
+              <div>
+                <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 12" class="c-ficon c-ficon--tick FilterPill_c-filterPill-icon_2Vk2V"><path d="M5.53 10.57L15.65.45a.4.4 0 1 1 .57.57l-10.4 10.4a.4.4 0 0 1-.57 0l-4.8-4.8a.4.4 0 1 1 .57-.57l4.51 4.52z"></path></svg><span>Cinese</span><span class="left">4</span></button>
+              </div>
+              <div>
+                <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 12" class="c-ficon c-ficon--tick FilterPill_c-filterPill-icon_2Vk2V"><path d="M5.53 10.57L15.65.45a.4.4 0 1 1 .57.57l-10.4 10.4a.4.4 0 0 1-.57 0l-4.8-4.8a.4.4 0 1 1 .57-.57l4.51 4.52z"></path></svg><span>Fritti</span><span class="left">22</span></button>
+              </div>
+              <div>
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 12" class="c-ficon c-ficon--tick FilterPill_c-filterPill-icon_2Vk2V"><path d="M5.53 10.57L15.65.45a.4.4 0 1 1 .57.57l-10.4 10.4a.4.4 0 0 1-.57 0l-4.8-4.8a.4.4 0 1 1 .57-.57l4.51 4.52z"></path></svg>
+                  <span>Giapponese</span><span class="left">27</span>
+                </button>
+              </div>
+              <div>
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 12" class="c-ficon c-ficon--tick FilterPill_c-filterPill-icon_2Vk2V"><path d="M5.53 10.57L15.65.45a.4.4 0 1 1 .57.57l-10.4 10.4a.4.4 0 0 1-.57 0l-4.8-4.8a.4.4 0 1 1 .57-.57l4.51 4.52z"></path></svg>
+                  <span>Gustali a pranzo</span><span class="left">33</span>
+                </button>
+              </div>
+              <div>
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 12" class="c-ficon c-ficon--tick FilterPill_c-filterPill-icon_2Vk2V"><path d="M5.53 10.57L15.65.45a.4.4 0 1 1 .57.57l-10.4 10.4a.4.4 0 0 1-.57 0l-4.8-4.8a.4.4 0 1 1 .57-.57l4.51 4.52z"></path></svg>
+                  <span>Hamburger</span><span class="left">19</span>
+                </button>
+              </div>
+              <div>
+                <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 12" class="c-ficon c-ficon--tick FilterPill_c-filterPill-icon_2Vk2V"><path d="M5.53 10.57L15.65.45a.4.4 0 1 1 .57.57l-10.4 10.4a.4.4 0 0 1-.57 0l-4.8-4.8a.4.4 0 1 1 .57-.57l4.51 4.52z"></path></svg><span>Italiano</span><span class="left">40</span></button>
+              </div>
+              <div>
+                <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 12" class="c-ficon c-ficon--tick FilterPill_c-filterPill-icon_2Vk2V"><path d="M5.53 10.57L15.65.45a.4.4 0 1 1 .57.57l-10.4 10.4a.4.4 0 0 1-.57 0l-4.8-4.8a.4.4 0 1 1 .57-.57l4.51 4.52z"></path></svg><span>Panini</span><span class="left">27</span></button>
+              </div>
+              <div>
+                <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 12" class="c-ficon c-ficon--tick FilterPill_c-filterPill-icon_2Vk2V"><path d="M5.53 10.57L15.65.45a.4.4 0 1 1 .57.57l-10.4 10.4a.4.4 0 0 1-.57 0l-4.8-4.8a.4.4 0 1 1 .57-.57l4.51 4.52z"></path></svg><span>Pinsa</span><span class="left">32</span></button>
+              </div>
+            </div>
+            <div class="more">
+              <button>
+                Vedi altri
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 11.171582 6.5885787"
+                  class="c-ficon c-ficon--chevron"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="m 0.29029267,0.29828979 a 1,1 0 0 1 1.41699993,0 l 3.876,3.87400011 3.8769996,-3.87800011 a 1,1 0 0 1 1.4170008,0 1,1 0 0 1 0,1.41700011 L 6.2942926,6.2942896 a 1,1 0 0 1 -1.417,0 L 0.29429267,1.7112899 a 1,1 0 0 1 -0.004,-1.41300011 z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div class="title-sb">
+              <svg
+                data-v-67ec89c6=""
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 23 15"
+                class="c-ficon c-ficon--sliders"
+              >
+                <path
+                  data-v-67ec89c6=""
+                  d="M.88 3.3a.55.55 0 1 1 0-1.1h4.4a.55.55 0 1 1 0 1.1H.88zm20.9-1.1a.55.55 0 0 1 0 1.1h-11a.55.55 0 0 1 0-1.1h11zm0 8.8a.55.55 0 0 1 0 1.1h-4.4a.55.55 0 1 1 0-1.1h4.4zM.88 12.1a.55.55 0 0 1 0-1.1h11a.55.55 0 0 1 0 1.1h-11zm5.5-11c-.3 0-.55.25-.55.55v2.2c0 .3.25.55.55.55h3.3c.3 0 .55-.25.55-.55v-2.2c0-.3-.24-.55-.55-.55h-3.3zm0-1.1h3.3c.91 0 1.65.74 1.65 1.65v2.2c0 .91-.74 1.65-1.65 1.65h-3.3c-.9 0-1.65-.74-1.65-1.65v-2.2C4.73.74 5.47 0 6.38 0zm6.6 9.9c-.3 0-.55.25-.55.55v2.2c0 .3.25.55.55.55h3.3c.3 0 .55-.25.55-.55v-2.2c0-.3-.24-.55-.55-.55h-3.3zm0-1.1h3.3c.91 0 1.65.74 1.65 1.65v2.2c0 .91-.74 1.65-1.65 1.65h-3.3c-.9 0-1.65-.74-1.65-1.65v-2.2c0-.91.74-1.65 1.65-1.65z"
+                ></path>
+              </svg>
+              <h3>Filtri</h3>
+              <button class="reset">Resetta</button>
+            </div>
+            <div class="side-option">
+              <div>
+                <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 12" class="c-ficon c-ficon--tick FilterPill_c-filterPill-icon_2Vk2V"><path d="M5.53 10.57L15.65.45a.4.4 0 1 1 .57.57l-10.4 10.4a.4.4 0 0 1-.57 0l-4.8-4.8a.4.4 0 1 1 .57-.57l4.51 4.52z"></path></svg><span>Offerte Speciali</span><span class="left">7</span></button>
+              </div>
+              <div>
+                <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 12" class="c-ficon c-ficon--tick FilterPill_c-filterPill-icon_2Vk2V"><path d="M5.53 10.57L15.65.45a.4.4 0 1 1 .57.57l-10.4 10.4a.4.4 0 0 1-.57 0l-4.8-4.8a.4.4 0 1 1 .57-.57l4.51 4.52z"></path></svg><span>Consegna Gratuita</span><span class="left">52</span></button>
+              </div>
+              <div>
+                <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 12" class="c-ficon c-ficon--tick FilterPill_c-filterPill-icon_2Vk2V"><path d="M5.53 10.57L15.65.45a.4.4 0 1 1 .57.57l-10.4 10.4a.4.4 0 0 1-.57 0l-4.8-4.8a.4.4 0 1 1 .57-.57l4.51 4.52z"></path></svg><span>5+ stelle</span><span class="left">34</span></button>
+              </div>
+              <div>
+                <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 12" class="c-ficon c-ficon--tick FilterPill_c-filterPill-icon_2Vk2V"><path d="M5.53 10.57L15.65.45a.4.4 0 1 1 .57.57l-10.4 10.4a.4.4 0 0 1-.57 0l-4.8-4.8a.4.4 0 1 1 .57-.57l4.51 4.52z"></path></svg><span>Aperto ora</span><span class="left">19</span></button>
+              </div>
+              <div>
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 12" class="c-ficon c-ficon--tick FilterPill_c-filterPill-icon_2Vk2V"><path d="M5.53 10.57L15.65.45a.4.4 0 1 1 .57.57l-10.4 10.4a.4.4 0 0 1-.57 0l-4.8-4.8a.4.4 0 1 1 .57-.57l4.51 4.52z"></path></svg>
+                  <span>Ritiro al locale</span><span class="left">27</span>
+                </button>
+              </div>
+              <div>
+                  <button disabled><span  class="transparent">Nuovo</span><span class="left transparent">0</span></button>
+                </div>
+  
+                <div>
+                  <button disabled>
+                    <span class="transparent">Halal</span><span class="left transparent">0</span>
+                  </button>
+                </div>
+          </div>
+        </div>
+    </div>
+
+        <div class="content-wrapper">
+            <div class="form" id="form">
+              <img
+                src="../../Assets-just eat/Cards/icons8-ricerca-50.png"
+                alt=""
+              /><input
+                id="focus"
+                type="text"
+                placeholder="Cerca per cucina o ristorante"
+                class="search"
+              />
+            </div>
+            <div class="sub-form">
+              <div class="sub-form-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="c-ficon c-ficon--info"
+                >
+                  <path
+                    d="M12 .133A11.867 11.867 0 1 0 23.867 12 11.882 11.882 0 0 0 12 .133ZM10.852 10.76h2.296v5.834h-2.296V10.76Zm2.68-3.354a1.532 1.532 0 1 1-3.064 0 1.532 1.532 0 0 1 3.063 0Z"
+                  ></path></svg
+                ><span>10 ristoranti aperti</span>
+              </div>
+              <div class="sub-form-item">
+                Ordinato per Consigliati
+                <svg
+                  id=""
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 10"
+                  class="c-ficon c-ficon--sort"
+                >
+                  <path
+                    d="M.44.89a.44.44 0 0 1 0-.89h15.12a.44.44 0 0 1 0 .89H.44zm0 4.44a.44.44 0 0 1 0-.89h9.78a.44.44 0 1 1 0 .9H.44zm0 4.45a.44.44 0 0 1 0-.9H4.9a.44.44 0 1 1 0 .9H.44z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="card-wrapper">
+              <!-- INIZIO CARD -->
+              <div class="card">
+                <img src="../../Assets-just eat/Cards/4.webp" alt="" />
+                <div class="card-right">
+                  <div class="card-title">
+                    <h5>MC Donald's</h5>
+                  </div>
+                  <div class="card-info">
+                    <div class="info-content">
+                      <div class="info-item">
+                        <img
+                          src="../../Assets-just eat/Cards/icons8-star-48.png"
+                          alt=""
+                        />
+                        <p>5.40/6 (209)</p>
+                      </div>
+                      <div class="info-item">
+                        <p>Hamburger - Fast Food</p>
+                      </div>
+                    </div>
+                    <div class="info-content">
+                      <div class="info-item">
+                        <img
+                          src="../../Assets-just eat/Cards/icons8-region-50.png"
+                          alt=""
+                        />
+                        <p>1.0 km</p>
+                      </div>
+                      <div class="info-item">
+                        <img
+                          src="../../Assets-just eat/Cards/icons8-cash-64.png"
+                          alt=""
+                        />
+                        <p>Consegna: GRATIS - Ordine Minimo: 10€</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- FINE CARD -->
+              <!-- INIZIO CARD -->
+              <div class="card">
+                <img src="../../Assets-just eat/Cards/5.webp" alt="" />
+                <div class="card-right">
+                  <div class="card-title">
+                    <h5>Pizzeria Pippo - Food 'n' Grill</h5>
+                  </div>
+                  <div class="card-info">
+                    <div class="info-content">
+                      <div class="info-item">
+                        <img
+                          src="../../Assets-just eat/Cards/icons8-star-48.png"
+                          alt=""
+                        />
+                        <p>5.40/6 (209)</p>
+                      </div>
+                      <div class="info-item">
+                        <p>Pizzeria - Rosticceria</p>
+                      </div>
+                    </div>
+                    <div class="info-content">
+                      <div class="info-item">
+                        <img
+                          src="../../Assets-just eat/Cards/icons8-region-50.png"
+                          alt=""
+                        />
+                        <p>1.0 km</p>
+                      </div>
+                      <div class="info-item">
+                        <img
+                          src="../../Assets-just eat/Cards/icons8-cash-64.png"
+                          alt=""
+                        />
+                        <p>Consegna: GRATIS - Ordine Minimo: 10€</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- FINE CARD -->
+              <!-- INIZIO CARD -->
+              <div class="card">
+                <img src="../../Assets-just eat/Cards/1.jpg" alt="" />
+                <div class="card-right">
+                  <div class="card-title">
+                    <h5>Adore - Gelateria Artigianale</h5>
+                  </div>
+                  <div class="card-info">
+                    <div class="info-content">
+                      <div class="info-item">
+                        <img
+                          src="../../Assets-just eat/Cards/icons8-star-48.png"
+                          alt=""
+                        />
+                        <p>5.40/6 (209)</p>
+                      </div>
+                      <div class="info-item">
+                        <p>Dolci - Gelato</p>
+                      </div>
+                    </div>
+                    <div class="info-content">
+                      <div class="info-item">
+                        <img
+                          src="../../Assets-just eat/Cards/icons8-region-50.png"
+                          alt=""
+                        />
+                        <p>1.0 km</p>
+                      </div>
+                      <div class="info-item">
+                        <img
+                          src="../../Assets-just eat/Cards/icons8-cash-64.png"
+                          alt=""
+                        />
+                        <p>Consegna: GRATIS</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- FINE CARD -->
+              <!-- INIZIO CARD -->
+              <div class="card">
+                <img src="../../Assets-just eat/Cards/3.webp" alt="" />
+                <div class="card-right">
+                  <div class="card-title">
+                    <h5>Burger King</h5>
+                  </div>
+                  <div class="card-info">
+                    <div class="info-content">
+                      <div class="info-item">
+                        <img
+                          src="../../Assets-just eat/Cards/icons8-star-48.png"
+                          alt=""
+                        />
+                        <p>5.40/6 (209)</p>
+                      </div>
+                      <div class="info-item">
+                        <p>Hamburger - Fast Food</p>
+                      </div>
+                    </div>
+                    <div class="info-content">
+                      <div class="info-item">
+                        <img
+                          src="../../Assets-just eat/Cards/icons8-region-50.png"
+                          alt=""
+                        />
+                        <p>1.0 km</p>
+                      </div>
+                      <div class="info-item">
+                        <img
+                          src="../../Assets-just eat/Cards/icons8-cash-64.png"
+                          alt=""
+                        />
+                        <p>Consegna: GRATIS - Ordine Minimo: 10€</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- FINE CARD -->
+              <!-- INIZIO CARD -->
+              <div class="card">
+                <img src="../../Assets-just eat/Cards/2.jpg" alt="" />
+                <div class="card-right">
+                  <div class="card-title">
+                    <h5>Gryko Gyros</h5>
+                  </div>
+                  <div class="card-info">
+                    <div class="info-content">
+                      <div class="info-item">
+                        <img
+                          src="../../Assets-just eat/Cards/icons8-star-48.png"
+                          alt=""
+                        />
+                        <p>5.40/6 (209)</p>
+                      </div>
+                      <div class="info-item">
+                        <p>Etnico - Fast Food</p>
+                      </div>
+                    </div>
+                    <div class="info-content">
+                      <div class="info-item">
+                        <img
+                          src="../../Assets-just eat/Cards/icons8-region-50.png"
+                          alt=""
+                        />
+                        <p>1.0 km</p>
+                      </div>
+                      <div class="info-item">
+                        <img
+                          src="../../Assets-just eat/Cards/icons8-cash-64.png"
+                          alt=""
+                        />
+                        <p>Consegna: GRATIS - Ordine Minimo: 10€</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- FINE CARD -->
+              
+              <!-- INIZIO CARD -->
+              <div class="card">
+                <img src="../../Assets-just eat/Cards/6.webp" alt="" />
+                <div class="card-right">
+                  <div class="card-title">
+                    <h5>PokèParole</h5>
+                  </div>
+                  <div class="card-info">
+                    <div class="info-content">
+                      <div class="info-item">
+                        <img
+                          src="../../Assets-just eat/Cards/icons8-star-48.png"
+                          alt=""
+                        />
+                        <p>5.40/6 (209)</p>
+                      </div>
+                      <div class="info-item">
+                        <p>Pokè - Fast Food</p>
+                      </div>
+                    </div>
+                    <div class="info-content">
+                      <div class="info-item">
+                        <img
+                          src="../../Assets-just eat/Cards/icons8-region-50.png"
+                          alt=""
+                        />
+                        <p>1.5 km</p>
+                      </div>
+                      <div class="info-item">
+                        <img
+                          src="../../Assets-just eat/Cards/icons8-cash-64.png"
+                          alt=""
+                        />
+                        <p>Consegna: GRATIS - Ordine Minimo: 10€</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- FINE CARD -->
+              <!-- INIZIO CARD -->
+              <div class="card">
+                <img src="../../Assets-just eat/Cards/8.jpg" alt="" />
+                <div class="card-right">
+                  <div class="card-title">
+                    <h5>Damar Dolci</h5>
+                  </div>
+                  <div class="card-info">
+                    <div class="info-content">
+                      <div class="info-item">
+                        <img
+                          src="../../Assets-just eat/Cards/icons8-star-48.png"
+                          alt=""
+                        />
+                        <p>5.40/6 (209)</p>
+                      </div>
+                      <div class="info-item">
+                        <p>Spesa</p>
+                      </div>
+                    </div>
+                    <div class="info-content">
+                      <div class="info-item">
+                        <img
+                          src="../../Assets-just eat/Cards/icons8-region-50.png"
+                          alt=""
+                        />
+                        <p>1.0 km</p>
+                      </div>
+                      <div class="info-item">
+                        <img
+                          src="../../Assets-just eat/Cards/icons8-cash-64.png"
+                          alt=""
+                        />
+                        <p>Consegna: GRATIS - Ordine Minimo: 10€</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- FINE CARD -->
+              <!-- INIZIO CARD -->
+              <div class="card">
+                <img src="../../Assets-just eat/Cards/5.webp" alt="" />
+                <div class="card-right">
+                  <div class="card-title">
+                    <h5>America Pizza</h5>
+                  </div>
+                  <div class="card-info">
+                    <div class="info-content">
+                      <div class="info-item">
+                        <img
+                          src="../../Assets-just eat/Cards/icons8-star-48.png"
+                          alt=""
+                        />
+                        <p>5.40/6 (209)</p>
+                      </div>
+                      <div class="info-item">
+                        <p>Etnico - Pizza</p>
+                      </div>
+                    </div>
+                    <div class="info-content">
+                      <div class="info-item">
+                        <img
+                          src="../../Assets-just eat/Cards/icons8-region-50.png"
+                          alt=""
+                        />
+                        <p>3.0 km</p>
+                      </div>
+                      <div class="info-item">
+                        <img
+                          src="../../Assets-just eat/Cards/icons8-cash-64.png"
+                          alt=""
+                        />
+                        <p>Consegna: GRATIS - Ordine Minimo: 10€</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- FINE CARD -->
+              <!-- INIZIO CARD -->
+              <div class="card">
+                <img src="../../Assets-just eat/Cards/3.webp" alt="" />
+                <div class="card-right">
+                  <div class="card-title">
+                    <h5>Burger King - Via Mazzini</h5>
+                  </div>
+                  <div class="card-info">
+                    <div class="info-content">
+                      <div class="info-item">
+                        <img
+                          src="../../Assets-just eat/Cards/icons8-star-48.png"
+                          alt=""
+                        />
+                        <p>5.40/6 (209)</p>
+                      </div>
+                      <div class="info-item">
+                        <p>Hamburger - Fast Food</p>
+                      </div>
+                    </div>
+                    <div class="info-content">
+                      <div class="info-item">
+                        <img
+                          src="../../Assets-just eat/Cards/icons8-region-50.png"
+                          alt=""
+                        />
+                        <p>1.0 km</p>
+                      </div>
+                      <div class="info-item">
+                        <img
+                          src="../../Assets-just eat/Cards/icons8-cash-64.png"
+                          alt=""
+                        />
+                        <p>Consegna: GRATIS - Ordine Minimo: 10€</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- FINE CARD -->
+              <!-- INIZIO CARD -->
+              <div class="card">
+                <img src="../../Assets-just eat/Cards/10.jpg" alt="" />
+                <div class="card-right">
+                  <div class="card-title">
+                    <h5>Pollo Pazzo</h5>
+                  </div>
+                  <div class="card-info">
+                    <div class="info-content">
+                      <div class="info-item">
+                        <img
+                          src="../../Assets-just eat/Cards/icons8-star-48.png"
+                          alt=""
+                        />
+                        <p>5.40/6 (209)</p>
+                      </div>
+                      <div class="info-item">
+                        <p>Rosticceria</p>
+                      </div>
+                    </div>
+                    <div class="info-content">
+                      <div class="info-item">
+                        <img
+                          src="../../Assets-just eat/Cards/icons8-region-50.png"
+                          alt=""
+                        />
+                        <p>2.0 km</p>
+                      </div>
+                      <div class="info-item">
+                        <img
+                          src="../../Assets-just eat/Cards/icons8-cash-64.png"
+                          alt=""
+                        />
+                        <p>Consegna: GRATIS - Ordine Minimo: 10€</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- FINE CARD -->
+             
+            </div>
+          </div>
+          
+      </div>
+    </body>
+
+  </body>
+</html>
