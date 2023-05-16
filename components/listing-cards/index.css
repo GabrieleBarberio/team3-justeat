@@ -3,6 +3,39 @@
   padding: 0;
 }
 
+@media screen and (max-width: 767px) {
+
+  body .main-wrapper {
+    width: 90% !important;
+    height: 70% !important;
+    display: flex;
+}
+body .main-wrapper .content-wrapper .card-wrapper{
+  gap: 80px;
+  flex-direction: column;
+}
+body .main-wrapper .content-wrapper .card-wrapper .card {
+  display: flex;
+  flex-direction: column !important;
+  width: 100%;
+  max-width: 1000px;
+  /* height: auto; */
+  max-height: 150px;
+  margin: 15px;
+  /* padding: 8px; */
+}
+body .main-wrapper .content-wrapper .card-wrapper .card img {
+    display: block;
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+}
+
+
 body {
   width: 100%;
   height: 100%;

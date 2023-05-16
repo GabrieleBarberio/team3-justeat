@@ -4,6 +4,52 @@
   box-sizing: border-box;
 }
 
+@media screen and (max-width: 767px) {
+  .upper-navbar {
+    box-shadow: 1px 1px 8px rgba(36, 46, 48, 0.3882352941);
+    margin: 0 !important;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100% !important;
+  }
+  .upper-navbar .upper-logo {
+    padding: 0 !important;
+    flex-grow: 1;
+    justify-content: center;
+  }
+  .upper-navbar .upper-logo .justeat-logo {
+    width: 100px;
+    display: flex;
+    align-items: center;
+  }
+  .upper-navbar .upper-left {
+    display: block;
+  }
+  .upper-navbar .upper-left button {
+    width: 50px;
+    border: none;
+    background: transparent;
+  }
+  .upper-navbar .upper-right {
+    display: none !important;
+  }
+  .upper-navbar .upper-right2 {
+    display: flex !important;
+  }
+  .bottom-navbar {
+    width: 100% !important;
+    display: flex;
+    padding-top: 0;
+    overflow-x: scroll;
+  }
+  .bottom-navbar .food-card {
+    width: 100% !important;
+  }
+  .main-wrapper .side-wrapper {
+    display: none !important;
+  }
+}
 body {
   width: 100vw;
   height: 100vh;
@@ -18,10 +64,12 @@ body .upper-navbar {
 }
 body .upper-navbar .upper-logo {
   display: flex;
-  width: 15%;
-  height: 57%;
-  padding-top: 15px;
-  padding-left: 13px;
+  width: 120px;
+  height: auto;
+  /* padding-top: 15px; */
+  /* padding-left: 13px; */
+  justify-content: center;
+  align-items: center;
 }
 body .upper-navbar .upper-logo .justeat-logo {
   background-color: transparent;
@@ -29,6 +77,9 @@ body .upper-navbar .upper-logo .justeat-logo {
 }
 body .upper-navbar .upper-logo img {
   width: 100%;
+}
+body .upper-left {
+  display: none;
 }
 body .upper-right {
   display: flex;
@@ -47,6 +98,25 @@ body .upper-right a {
 }
 body .upper-right svg {
   height: 20px;
+  padding-right: 5px;
+}
+body .upper-right2 {
+  display: none;
+  margin-left: auto;
+  align-items: center;
+  gap: 25px;
+  padding-right: 10px;
+}
+body .upper-right2 a {
+  text-decoration: none;
+  font-weight: 800;
+  color: #242e30;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  display: flex;
+}
+body .upper-right2 svg {
+  width: 30px;
   padding-right: 5px;
 }
 body .bottom-navbar {

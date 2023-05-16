@@ -4,6 +4,65 @@
   box-sizing: border-box;
 }
 
+@media screen and (max-width: 767px) {
+
+  .upper-navbar{
+    box-shadow: 1px 1px 8px #242e3063;
+    margin: 0 !important;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100% !important;
+    .upper-logo{
+      padding: 0 !important;
+      flex-grow: 1;
+      justify-content: center;
+      .justeat-logo{
+        width: 100px;
+        display: flex;
+        align-items:center;
+      }
+    }
+    .upper-left{
+      display: block;
+      button{
+        width: 50px;
+        border: none;
+        background: transparent;
+      }
+    }
+    
+    .upper-right {
+      display: none !important;
+    }
+    .upper-right2{
+      display: flex !important;
+    
+  }
+ }
+ .bottom-navbar {
+  width: 100% !important;
+  display: flex;
+  padding-top: 0;
+  overflow-x: scroll;
+  .food-card {
+    width: 100% !important; 
+}}
+.main-wrapper{
+  .side-wrapper{
+    display: none !important;
+  }
+}
+
+
+
+}
+
+  
+
+
+
+
 body {
   width: 100vw;
   height: 100vh;
@@ -16,10 +75,12 @@ body {
     padding-top: 0;
     .upper-logo {
       display: flex;
-      width: 15%;
-      height: 57%;
-      padding-top: 15px;
-      padding-left: 13px;
+      width: 120px;
+      height: auto;
+    /* padding-top: 15px; */
+    /* padding-left: 13px; */
+    justify-content: center;
+    align-items: center;
       .justeat-logo {
         background-color: transparent;
         border: none;
@@ -28,6 +89,9 @@ body {
         width: 100%;
       }
     }
+  }
+  .upper-left{
+    display: none;
   }
   .upper-right {
     display: flex;
@@ -47,6 +111,26 @@ body {
       height: 20px;
       padding-right: 5px;
     }
+  }
+  .upper-right2{
+    display: none;
+    margin-left: auto;
+    align-items: center;
+    gap: 25px;
+    padding-right: 10px;
+    a {
+      text-decoration: none;
+      font-weight: 800;
+      color: #242e30;
+      font-size: 0.9rem;
+      line-height: 1.5;
+      display: flex;
+    }
+    svg {
+      width: 30px;
+      padding-right: 5px;
+    }
+
   }
   .bottom-navbar {
     width: 65%;
