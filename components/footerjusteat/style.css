@@ -1,26 +1,25 @@
-*{ 
-    margin: 0; 
-    padding:0;
-    box-sizing: border-box;
-}
+
 
 #footerJusteat{
     display:flex;
+    flex-direction: column;
     background-color: #efedea;
-    flex-wrap: wrap;
     width: 100%;
+    
+    
 }
 
-.container{
-    width: 80%;
+/* .container{
+    width: 100vw;
     margin: 0 auto;
-}
+} */
 
 
 .all-links{
     display: flex;
     flex-direction: row;
     width: 60%;
+    max-width: 1000px;
     margin:20px auto;
     gap: 5px;
 }
@@ -39,7 +38,7 @@
 
 .all-social-links{
     width: 100%;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     display: flex;
 }
 
