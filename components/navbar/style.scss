@@ -133,7 +133,7 @@ body {
 
   }
   .bottom-navbar {
-    width: 65%;
+    width: 100%;
     height: fit-content;
     background-color: rgb(255, 255, 255);
     margin: 0 auto;
@@ -143,14 +143,22 @@ body {
       width: 100%;
       display: flex;
       justify-content: space-around;
-      height: fit-content;
+      height: 160px;
+      overflow-x: scroll;
       //   gap: 20px;
-      button {
-        width: 12%;
-        height: 14%;
-        background-color: transparent;
+      .gustali-a-pranzo,
+      .fritti,
+      .pizza,
+      .hamburger,
+      .panini, 
+      .sushi,
+      .cinese, 
+      .panini2 {
+        width: 60px !important;
+        height: 100px;
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        background-color: transparent;
         border: none;
         // margin-left: 30px;
         padding: 10px;
@@ -158,7 +166,7 @@ body {
           justify-content: center;
           display: flex;
           align-items: center;
-          width: 100%;
+          width: 100px;
           background-color: #ff8810;
           border-radius: 10px;
           position: relative;
