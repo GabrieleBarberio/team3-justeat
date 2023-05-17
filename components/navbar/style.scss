@@ -41,12 +41,14 @@
   }
  }
  .bottom-navbar {
-  width: 100% !important;
+  width: 90% !important;
   display: flex;
   padding-top: 0;
   overflow-x: scroll;
+  margin-inline: auto;
   .food-card {
     width: 100% !important; 
+    margin-inline: 0 !important;
 }}
 .main-wrapper{
   .side-wrapper{
@@ -132,62 +134,60 @@ body {
     }
 
   }
-  .bottom-navbar {
-    width: 100%;
-    height: fit-content;
-    background-color: rgb(255, 255, 255);
-    margin: 0 auto;
-    display: flex;
-    padding-top: 0;
-    .food-card {
-      width: 100%;
-      display: flex;
-      margin-inline: 25px ;
-      padding-left: 35px;
-      justify-content: space-around;
-      height: 160px;
-      overflow-x: scroll;
-      //   gap: 20px;
-      .gustali-a-pranzo,
-      .fritti,
-      .pizza,
-      .hamburger,
-      .panini, 
-      .sushi,
-      .cinese, 
-      .panini2 {
-        width: 100px !important;
-        height: 100px;
-        display: flex;
-        text-align: left;
-        flex-direction: column;
-        background-color: transparent;
-        border: none;
-        margin-inline: 15px;
-        padding: 10px;
-        img {
-          display: block;
-          width: 100px !important;
-          height: 80pxpx;
-          background-color: #ff8810;
-          border-radius: 10px;
-          position: relative;
+  
         }
-        .button-description {
+        .bottom-navbar {
+          width: 65%;
+          height: fit-content;
+          background-color: rgb(255, 255, 255);
+          margin: 0 auto;
           display: flex;
-          padding-top: 15px;
-          //   width: 10%;
-          //   height: 12%;
-          //   align-items: end;
-          gap: 4px;
-          svg {
+          padding-top: 0;
+          .food-card {
+            width: 100%;
             display: flex;
-            width: 10%;
-
-            // height: 50px;
-            display: none;
-          }
-        }
+            justify-content: space-around;
+            height: fit-content;
+            .gustali-a-pranzo,
+            .fritti,
+            .pizza,
+            .hamburger,
+            .panini, 
+            .sushi,
+            .cinese, 
+            .panini2 {
+              width: 12%;
+              height: 14%;
+              background-color: transparent;
+              display: flex;
+              flex-wrap: wrap;
+              border: none;
+              // margin-left: 30px;
+              padding: 10px;
+              img {
+                justify-content: center;
+                display: flex;
+                align-items: center;
+                width: 100%;
+                background-color: #ff8810;
+                border-radius: 10px;
+                position: relative;
+              }
+              .button-description {
+                display: flex;
+                padding-top: 15px;
+                //   width: 10%;
+                //   height: 12%;
+                //   align-items: end;
+                gap: 4px;
+                svg {
+                  display: flex;
+                  width: 10%;
+      
+                  // height: 50px;
+                  display: none;
+                }
+              }
         &:hover {
           cursor: pointer;
           svg {
@@ -240,4 +240,3 @@ body {
       }
     }
   }
-}

@@ -38,13 +38,15 @@
     display: flex !important;
   }
   .bottom-navbar {
-    width: 100% !important;
+    width: 90% !important;
     display: flex;
     padding-top: 0;
     overflow-x: scroll;
+    margin-inline: auto;
   }
   .bottom-navbar .food-card {
     width: 100% !important;
+    margin-inline: 0 !important;
   }
   .main-wrapper .side-wrapper {
     display: none !important;
@@ -119,142 +121,139 @@ body .upper-right2 svg {
   width: 30px;
   padding-right: 5px;
 }
-body .bottom-navbar {
-  width: 100%;
+
+.bottom-navbar {
+  width: 65%;
+  height: -moz-fit-content;
   height: fit-content;
   background-color: rgb(255, 255, 255);
   margin: 0 auto;
   display: flex;
   padding-top: 0;
 }
-body .bottom-navbar .food-card {
+.bottom-navbar .food-card {
   width: 100%;
   display: flex;
-  margin-inline: 25px;
-  padding-left: 35px;
   justify-content: space-around;
-  height: 160px;
-  overflow-x: scroll;
+  height: -moz-fit-content;
+  height: fit-content;
 }
-body .bottom-navbar .food-card .gustali-a-pranzo,
-body .bottom-navbar .food-card .fritti,
-body .bottom-navbar .food-card .pizza,
-body .bottom-navbar .food-card .hamburger,
-body .bottom-navbar .food-card .panini,
-body .bottom-navbar .food-card .sushi,
-body .bottom-navbar .food-card .cinese,
-body .bottom-navbar .food-card .panini2 {
-  width: 100px !important;
-  height: 100px;
-  display: flex;
-  text-align: left;
-  flex-direction: column;
+.bottom-navbar .food-card .gustali-a-pranzo,
+.bottom-navbar .food-card .fritti,
+.bottom-navbar .food-card .pizza,
+.bottom-navbar .food-card .hamburger,
+.bottom-navbar .food-card .panini,
+.bottom-navbar .food-card .sushi,
+.bottom-navbar .food-card .cinese,
+.bottom-navbar .food-card .panini2 {
+  width: 12%;
+  height: 14%;
   background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
   border: none;
-  margin-inline: 15px;
   padding: 10px;
 }
-body .bottom-navbar .food-card .gustali-a-pranzo img,
-body .bottom-navbar .food-card .fritti img,
-body .bottom-navbar .food-card .pizza img,
-body .bottom-navbar .food-card .hamburger img,
-body .bottom-navbar .food-card .panini img,
-body .bottom-navbar .food-card .sushi img,
-body .bottom-navbar .food-card .cinese img,
-body .bottom-navbar .food-card .panini2 img {
-  display: block;
-  width: 100px !important;
-  height: 80pxpx;
+.bottom-navbar .food-card .gustali-a-pranzo img,
+.bottom-navbar .food-card .fritti img,
+.bottom-navbar .food-card .pizza img,
+.bottom-navbar .food-card .hamburger img,
+.bottom-navbar .food-card .panini img,
+.bottom-navbar .food-card .sushi img,
+.bottom-navbar .food-card .cinese img,
+.bottom-navbar .food-card .panini2 img {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
   background-color: #ff8810;
   border-radius: 10px;
   position: relative;
 }
-body .bottom-navbar .food-card .gustali-a-pranzo .button-description,
-body .bottom-navbar .food-card .fritti .button-description,
-body .bottom-navbar .food-card .pizza .button-description,
-body .bottom-navbar .food-card .hamburger .button-description,
-body .bottom-navbar .food-card .panini .button-description,
-body .bottom-navbar .food-card .sushi .button-description,
-body .bottom-navbar .food-card .cinese .button-description,
-body .bottom-navbar .food-card .panini2 .button-description {
+.bottom-navbar .food-card .gustali-a-pranzo .button-description,
+.bottom-navbar .food-card .fritti .button-description,
+.bottom-navbar .food-card .pizza .button-description,
+.bottom-navbar .food-card .hamburger .button-description,
+.bottom-navbar .food-card .panini .button-description,
+.bottom-navbar .food-card .sushi .button-description,
+.bottom-navbar .food-card .cinese .button-description,
+.bottom-navbar .food-card .panini2 .button-description {
   display: flex;
   padding-top: 15px;
   gap: 4px;
 }
-body .bottom-navbar .food-card .gustali-a-pranzo .button-description svg,
-body .bottom-navbar .food-card .fritti .button-description svg,
-body .bottom-navbar .food-card .pizza .button-description svg,
-body .bottom-navbar .food-card .hamburger .button-description svg,
-body .bottom-navbar .food-card .panini .button-description svg,
-body .bottom-navbar .food-card .sushi .button-description svg,
-body .bottom-navbar .food-card .cinese .button-description svg,
-body .bottom-navbar .food-card .panini2 .button-description svg {
+.bottom-navbar .food-card .gustali-a-pranzo .button-description svg,
+.bottom-navbar .food-card .fritti .button-description svg,
+.bottom-navbar .food-card .pizza .button-description svg,
+.bottom-navbar .food-card .hamburger .button-description svg,
+.bottom-navbar .food-card .panini .button-description svg,
+.bottom-navbar .food-card .sushi .button-description svg,
+.bottom-navbar .food-card .cinese .button-description svg,
+.bottom-navbar .food-card .panini2 .button-description svg {
   display: flex;
   width: 10%;
   display: none;
 }
-body .bottom-navbar .food-card .gustali-a-pranzo:hover,
-body .bottom-navbar .food-card .fritti:hover,
-body .bottom-navbar .food-card .pizza:hover,
-body .bottom-navbar .food-card .hamburger:hover,
-body .bottom-navbar .food-card .panini:hover,
-body .bottom-navbar .food-card .sushi:hover,
-body .bottom-navbar .food-card .cinese:hover,
-body .bottom-navbar .food-card .panini2:hover {
+.bottom-navbar .food-card .gustali-a-pranzo:hover,
+.bottom-navbar .food-card .fritti:hover,
+.bottom-navbar .food-card .pizza:hover,
+.bottom-navbar .food-card .hamburger:hover,
+.bottom-navbar .food-card .panini:hover,
+.bottom-navbar .food-card .sushi:hover,
+.bottom-navbar .food-card .cinese:hover,
+.bottom-navbar .food-card .panini2:hover {
   cursor: pointer;
 }
-body .bottom-navbar .food-card .gustali-a-pranzo:hover svg,
-body .bottom-navbar .food-card .fritti:hover svg,
-body .bottom-navbar .food-card .pizza:hover svg,
-body .bottom-navbar .food-card .hamburger:hover svg,
-body .bottom-navbar .food-card .panini:hover svg,
-body .bottom-navbar .food-card .sushi:hover svg,
-body .bottom-navbar .food-card .cinese:hover svg,
-body .bottom-navbar .food-card .panini2:hover svg {
+.bottom-navbar .food-card .gustali-a-pranzo:hover svg,
+.bottom-navbar .food-card .fritti:hover svg,
+.bottom-navbar .food-card .pizza:hover svg,
+.bottom-navbar .food-card .hamburger:hover svg,
+.bottom-navbar .food-card .panini:hover svg,
+.bottom-navbar .food-card .sushi:hover svg,
+.bottom-navbar .food-card .cinese:hover svg,
+.bottom-navbar .food-card .panini2:hover svg {
   display: flex;
 }
-body .bottom-navbar .food-card .gustali-a-pranzo:focus,
-body .bottom-navbar .food-card .fritti:focus,
-body .bottom-navbar .food-card .pizza:focus,
-body .bottom-navbar .food-card .hamburger:focus,
-body .bottom-navbar .food-card .panini:focus,
-body .bottom-navbar .food-card .sushi:focus,
-body .bottom-navbar .food-card .cinese:focus,
-body .bottom-navbar .food-card .panini2:focus {
+.bottom-navbar .food-card .gustali-a-pranzo:focus,
+.bottom-navbar .food-card .fritti:focus,
+.bottom-navbar .food-card .pizza:focus,
+.bottom-navbar .food-card .hamburger:focus,
+.bottom-navbar .food-card .panini:focus,
+.bottom-navbar .food-card .sushi:focus,
+.bottom-navbar .food-card .cinese:focus,
+.bottom-navbar .food-card .panini2:focus {
   outline: 2px solid #4996fd;
   border-radius: 10px;
   color: #437c3e;
 }
-body .bottom-navbar .food-card .gustali-a-pranzo:focus svg,
-body .bottom-navbar .food-card .fritti:focus svg,
-body .bottom-navbar .food-card .pizza:focus svg,
-body .bottom-navbar .food-card .hamburger:focus svg,
-body .bottom-navbar .food-card .panini:focus svg,
-body .bottom-navbar .food-card .sushi:focus svg,
-body .bottom-navbar .food-card .cinese:focus svg,
-body .bottom-navbar .food-card .panini2:focus svg {
+.bottom-navbar .food-card .gustali-a-pranzo:focus svg,
+.bottom-navbar .food-card .fritti:focus svg,
+.bottom-navbar .food-card .pizza:focus svg,
+.bottom-navbar .food-card .hamburger:focus svg,
+.bottom-navbar .food-card .panini:focus svg,
+.bottom-navbar .food-card .sushi:focus svg,
+.bottom-navbar .food-card .cinese:focus svg,
+.bottom-navbar .food-card .panini2:focus svg {
   display: flex;
 }
-body .bottom-navbar .food-card .gustali-a-pranzo img {
+.bottom-navbar .food-card .gustali-a-pranzo img {
   background-color: #5b3d5b;
 }
-body .bottom-navbar .food-card .fritti img {
+.bottom-navbar .food-card .fritti img {
   background-color: #d6663a;
 }
-body .bottom-navbar .food-card .hamburger img {
+.bottom-navbar .food-card .hamburger img {
   background-color: #eabd45;
 }
-body .bottom-navbar .food-card .panini img {
+.bottom-navbar .food-card .panini img {
   background-color: #c9d9dd;
 }
-body .bottom-navbar .food-card .sushi img {
+.bottom-navbar .food-card .sushi img {
   background-color: #dea7b1;
 }
-body .bottom-navbar .food-card .cinese img {
+.bottom-navbar .food-card .cinese img {
   background-color: #e1872f;
 }
-body .bottom-navbar .food-card .panini2 img {
+.bottom-navbar .food-card .panini2 img {
   background-color: #a53f97;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
