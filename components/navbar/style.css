@@ -156,7 +156,6 @@ body .upper-right2 svg {
 
 .bottom-navbar {
   width: 65%;
-  height: -moz-fit-content;
   height: fit-content;
   background-color: rgb(255, 255, 255);
   margin: 0 auto;
@@ -167,7 +166,6 @@ body .upper-right2 svg {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  height: -moz-fit-content;
   height: fit-content;
 }
 .bottom-navbar .food-card .gustali-a-pranzo,
@@ -278,4 +276,6 @@ body .upper-right2 svg {
 }
 .bottom-navbar .food-card .panini2 img {
   background-color: #a53f97;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
