@@ -121,7 +121,6 @@ body .upper-right2 svg {
 }
 body .bottom-navbar {
   width: 100%;
-  height: -moz-fit-content;
   height: fit-content;
   background-color: rgb(255, 255, 255);
   margin: 0 auto;
@@ -131,6 +130,8 @@ body .bottom-navbar {
 body .bottom-navbar .food-card {
   width: 100%;
   display: flex;
+  margin-inline: 25px;
+  padding-left: 35px;
   justify-content: space-around;
   height: 160px;
   overflow-x: scroll;
@@ -143,12 +144,14 @@ body .bottom-navbar .food-card .panini,
 body .bottom-navbar .food-card .sushi,
 body .bottom-navbar .food-card .cinese,
 body .bottom-navbar .food-card .panini2 {
-  width: 60px !important;
+  width: 100px !important;
   height: 100px;
   display: flex;
+  text-align: left;
   flex-direction: column;
   background-color: transparent;
   border: none;
+  margin-inline: 15px;
   padding: 10px;
 }
 body .bottom-navbar .food-card .gustali-a-pranzo img,
@@ -159,10 +162,9 @@ body .bottom-navbar .food-card .panini img,
 body .bottom-navbar .food-card .sushi img,
 body .bottom-navbar .food-card .cinese img,
 body .bottom-navbar .food-card .panini2 img {
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  width: 100px;
+  display: block;
+  width: 100px !important;
+  height: 80pxpx;
   background-color: #ff8810;
   border-radius: 10px;
   position: relative;
@@ -253,4 +255,6 @@ body .bottom-navbar .food-card .cinese img {
 }
 body .bottom-navbar .food-card .panini2 img {
   background-color: #a53f97;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

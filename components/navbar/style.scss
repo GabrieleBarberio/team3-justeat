@@ -142,6 +142,8 @@ body {
     .food-card {
       width: 100%;
       display: flex;
+      margin-inline: 25px ;
+      padding-left: 35px;
       justify-content: space-around;
       height: 160px;
       overflow-x: scroll;
@@ -154,19 +156,19 @@ body {
       .sushi,
       .cinese, 
       .panini2 {
-        width: 60px !important;
+        width: 100px !important;
         height: 100px;
         display: flex;
+        text-align: left;
         flex-direction: column;
         background-color: transparent;
         border: none;
-        // margin-left: 30px;
+        margin-inline: 15px;
         padding: 10px;
         img {
-          justify-content: center;
-          display: flex;
-          align-items: center;
-          width: 100px;
+          display: block;
+          width: 100px !important;
+          height: 80pxpx;
           background-color: #ff8810;
           border-radius: 10px;
           position: relative;
