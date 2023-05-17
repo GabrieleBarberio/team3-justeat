@@ -49,6 +49,30 @@
   .food-card {
     width: 100% !important; 
     margin-inline: 0 !important;
+    .gustali-a-pranzo,
+            .fritti,
+            .pizza,
+            .hamburger,
+            .panini, 
+            .sushi,
+            .cinese, 
+            .panini2 {
+              width: 12%;
+              height: 14%;
+              background-color: transparent;
+              display: flex;
+              flex-wrap: wrap;
+              text-align: left;
+              border: none;
+              margin: 0 30px !important;
+              padding: 10px;
+              img {
+                width: 100px !important ;
+                height: 80px !important;
+                background-color: #ff8810;
+                border-radius: 10px;
+                position: relative;
+              }}
 }}
 .main-wrapper{
   .side-wrapper{
@@ -154,21 +178,18 @@ body {
             .hamburger,
             .panini, 
             .sushi,
-            .cinese, 
-            .panini2 {
+            .cinese {
               width: 12%;
               height: 14%;
               background-color: transparent;
               display: flex;
               flex-wrap: wrap;
               border: none;
-              // margin-left: 30px;
+              margin: 0 4px;
               padding: 10px;
               img {
-                justify-content: center;
-                display: flex;
-                align-items: center;
-                width: 100%;
+                width: 100% ;
+                // height: 80%;
                 background-color: #ff8810;
                 border-radius: 10px;
                 position: relative;

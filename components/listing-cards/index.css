@@ -3,6 +3,98 @@
   padding: 0;
 }
 
+@media screen and (max-width: 767px) {
+
+  body .main-wrapper {
+    width: 90% !important;
+    height: 70% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body .main-wrapper .content-wrapper{
+  margin: 0 auto;
+}
+
+body .main-wrapper .content-wrapper .card-wrapper{
+  gap: 80px;
+  flex-direction: column;
+}
+body .main-wrapper .content-wrapper .card-wrapper .card {
+  display: flex;
+  flex-direction: column !important;
+  width: 100%;
+  max-width: 1000px;
+  /* height: auto; */
+  max-height: 150px;
+  margin-top: 20px;
+  /* padding: 8px; */
+}
+body .main-wrapper .content-wrapper .card-wrapper .card img {
+    display: block;
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+body #footerJusteat{
+  margin-top: 100px;
+}
+
+body #footerJusteat .all-links{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  gap: 15px;
+}
+body #footerJusteat .all-links #servizio-clienti,
+body #footerJusteat .all-links #cucine,
+body #footerJusteat .all-links #citta,
+body #footerJusteat .all-links #catene,
+body #footerJusteat .all-links #chi-siamo{
+   width: 100%;
+}
+ body #footerJusteat .all-links #servizio-clienti h2,
+body #footerJusteat .all-links #cucine h2,
+body #footerJusteat .all-links #citta h2,
+body #footerJusteat .all-links #catene h2,
+body #footerJusteat .all-links #chi-siamo h2{
+   padding: 10px 0px;
+   font-size: 18px;
+   font-weight: 600;
+} 
+body #footerJusteat .all-links #servizio-clienti .anchor,
+body #footerJusteat .all-links #cucine .anchor,
+body #footerJusteat .all-links #citta .anchor,
+body #footerJusteat .all-links #catene .anchor,
+body #footerJusteat .all-links #chi-siamo .anchor{
+   padding-left: 18px;
+
+   
+} 
+
+body #footerJusteat .all-social-links .social-links{
+  flex-direction: column;
+  width: 100%;
+  justify-content: start;
+  align-items: flex-start;
+  padding-left: 15px;
+  margin: 0;
+
+}
+body #footerJusteat .all-social-links .social-links h2{
+ margin: 10px 0; 
+}
+
+
+}
+
+
 body {
   width: 100%;
   height: 100%;
