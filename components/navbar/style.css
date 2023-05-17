@@ -40,12 +40,14 @@
   .bottom-navbar {
     width: 90% !important;
     display: flex;
+    height: 130px;
     padding-top: 0;
     overflow-x: scroll;
     margin-inline: auto;
   }
   .bottom-navbar .food-card {
     width: 100% !important;
+    justify-content: unset !important;
     margin-inline: 0 !important;
   }
   .bottom-navbar .food-card .gustali-a-pranzo,
@@ -56,8 +58,8 @@
   .bottom-navbar .food-card .sushi,
   .bottom-navbar .food-card .cinese,
   .bottom-navbar .food-card .panini2 {
-    width: 12%;
-    height: 14%;
+    width: 130px !important;
+    height: 100px;
     background-color: transparent;
     display: flex;
     flex-wrap: wrap;
@@ -214,9 +216,10 @@ body .upper-right2 svg {
 .bottom-navbar .food-card .panini .button-description svg,
 .bottom-navbar .food-card .sushi .button-description svg,
 .bottom-navbar .food-card .cinese .button-description svg {
-  display: flex;
-  width: 10%;
-  display: none;
+  width: 0;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.3s;
 }
 .bottom-navbar .food-card .gustali-a-pranzo:hover,
 .bottom-navbar .food-card .fritti:hover,
@@ -234,7 +237,9 @@ body .upper-right2 svg {
 .bottom-navbar .food-card .panini:hover svg,
 .bottom-navbar .food-card .sushi:hover svg,
 .bottom-navbar .food-card .cinese:hover svg {
-  display: flex;
+  width: 16px;
+  transform: scale(1);
+  opacity: 1;
 }
 .bottom-navbar .food-card .gustali-a-pranzo:focus,
 .bottom-navbar .food-card .fritti:focus,
