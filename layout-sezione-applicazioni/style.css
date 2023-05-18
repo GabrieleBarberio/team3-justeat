@@ -1,5 +1,5 @@
 body{
-    padding: 35px;
+    padding: 0px;
     margin: 0px;
 }
 
@@ -7,13 +7,14 @@ body{
 display: flex;
 justify-content:space-evenly ;
 margin-top: 5rem;
+align-items: center;
 }
 
 h1{
     text-align: center;
 }
 
-img{
+.smartphone >img{
     height: 260px;
 
 }
