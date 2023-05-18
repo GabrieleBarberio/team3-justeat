@@ -1,5 +1,6 @@
 h2 {
   font-family: "Konkhmer Sleokchher" , sans-serif;
+  letter-spacing: 1.3px;
 }
 
 *{
@@ -23,9 +24,9 @@ body {
   height:45vh;
   max-height: 100%;
   padding-left: 30px;
-  padding-right: 32px;
+  padding-right: 30px;
   margin:0 auto;
-  margin-top: 10rem;
+  margin-top: 7rem;
 }
 
 .text-card {
@@ -72,7 +73,7 @@ body {
     
 }
 
-p:hover {
+.title-card  p:hover {
   text-decoration: underline;
   cursor: pointer;
 }

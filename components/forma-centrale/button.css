@@ -10,8 +10,8 @@
 body{
   display: flex;
   flex-direction: column;
-
 }
+
 .main-wrapper{
   background-image: url('../../Assets-just eat/Home/bg-panino.jpg ');
   background-repeat: no-repeat;
