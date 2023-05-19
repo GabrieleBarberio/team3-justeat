@@ -1,0 +1,42 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+.container{
+display: flex;
+justify-content:space-around ;
+width: 65%;
+max-width: 1500px;
+margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+}
+
+img{
+    height: 240px;
+
+}
+
+.ios{
+    height: 130px;
+    cursor: pointer;
+}
+
+.google {
+    height: 61px;
+    cursor: pointer;
+    
+}
+
+.button{
+    display: flex;
+
+
+}
+.button > button{
+    border: none;
+    background-color: transparent;
+}
