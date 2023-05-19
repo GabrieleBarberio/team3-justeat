@@ -5,19 +5,20 @@ body{
 
 .container{
 display: flex;
-justify-content:space-around ;
+justify-content: center;
+align-items: center;
 width: 65%;
 max-width: 1500px;
-margin: 0 auto;
+margin: 30px auto;
 }
 
 h1{
     text-align: center;
 }
 
-img{
-    height: 240px;
-
+.container .smartphone img{
+    height: auto;
+    width: 50%;
 }
 
 .ios{
@@ -33,6 +34,7 @@ img{
 
 .button{
     display: flex;
+    justify-content: center;
 
 
 }
