@@ -89,14 +89,18 @@ body .main-wrapper .side-wrapper .side-option > div button {
   gap: 10px;
 }
 body .main-wrapper .side-wrapper .side-option > div button svg {
-  display: none;
-  width: 7%;
+  width: 0;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.3s;
 }
 body .main-wrapper .side-wrapper .side-option > div button:hover {
   cursor: pointer;
 }
 body .main-wrapper .side-wrapper .side-option > div button:hover svg {
-  display: flex;
+  width: 16px;
+  transform: scale(1);
+  opacity: 1;
 }
 body .main-wrapper .side-wrapper .side-option > div button:focus {
   outline: 2px solid blue;
@@ -130,4 +134,6 @@ body .main-wrapper .side-wrapper .more button:focus p {
 }
 body .main-wrapper .side-wrapper .more button svg {
   max-width: 15%;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

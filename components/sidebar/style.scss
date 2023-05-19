@@ -88,15 +88,19 @@ body {
           gap: 10px;
 
           svg {
-            display: none;
-            width: 7%;
+            width: 0;
+            opacity: 0;
+            transform: scale(0);
+            transition: all .3s;
           }
           &:hover {
             cursor: pointer;
             // background-color: #f4f3f1;
 
             svg {
-              display: flex;
+              width: 16px;
+              transform: scale(1);
+              opacity: 1;
             }
           }
           &:focus {
