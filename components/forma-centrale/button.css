@@ -7,15 +7,15 @@
   font-family: 'Konkhmer Sleokchher', cursive;
 } */
 
-body{
+body {
   display: flex;
   flex-direction: column;
 }
 
-.main-wrapper{
-  background-image: url('../../Assets-just eat/Home/bg-panino.jpg ');
+.main-wrapper {
+  background-image: url("../../Assets-just eat/Home/bg-panino.jpg ");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   flex-grow: 1;
   width: 100% !important;
   height: 100%;
@@ -128,7 +128,6 @@ body{
   text-overflow: ellipsis;
   right: 16px;
 }
-
 
 /* da aggiustare le misure */
 .central-page .sectionsearch .searchbar .button-search {
