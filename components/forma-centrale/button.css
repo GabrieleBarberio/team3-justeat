@@ -108,11 +108,11 @@ body {
   outline: none;
   font-size: 18px;
 }
- .searchbar input:not(:empty) ~ .label {
+ /* .searchbar input:not(:empty) ~ .label {
   left: 19px;
 
   transform: translateY(-80%) scale(0.9);
- } 
+ }  */
 
 
 .searchbar input:focus ~ .label {
@@ -121,6 +121,11 @@ body {
   /* font-size: 14px; */
   transform: translateY(-80%) scale(0.9);
 }
+
+/* .searchbar input:focus-within ~ .label {
+  left: 19px;
+  transform: translateY(-80%) scale(0.9);
+} */
 
 .adress {
   position: absolute;
